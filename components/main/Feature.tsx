@@ -36,7 +36,7 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="flex mt-32 items-center justify-center">
+    <section className="flex mt-32 items-center justify-center">
       <div className="w-full max-w-6xl md:px-6 px-3 py-10">
         <h2 className="font-bold text-4xl  sm:max-w-xl md:text-[2.5rem] md:leading-[1.2]">
           لماذا تختار شركة شراء اثاث مستعمل؟
@@ -76,7 +76,7 @@ const Features = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

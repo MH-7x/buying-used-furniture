@@ -201,6 +201,9 @@ const FooterNew = () => {
                 <a
                   key={idx}
                   href={socialLinks[idx]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Follow Us on Social Media"
                   className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 text-gray-200 hover:bg-primary hover:text-secondary hover:-translate-y-1 transition-all duration-300"
                 >
                   <Icon size={16} />

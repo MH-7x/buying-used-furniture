@@ -6,8 +6,17 @@ import {
   MessageCircle,
   Banknote,
 } from "lucide-react";
+import { ReactNode } from "react";
 
-const SellProcessSection = () => {
+const SellProcessSection = ({
+  title,
+  description,
+  details,
+}: {
+  title?: string;
+  description?: string;
+  details?: { title: string; desc: ReactNode }[];
+}) => {
   // Brand Colors Configuration
   const colors = {
     primary: "#f5d7cc", // Light Peach
@@ -77,85 +86,141 @@ const SellProcessSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-5 tracking-tight text-secondary">
-            بيع أثاثك في 4 خطوات بسيطة وسريعة
+            {title ? title : " بيع أثاثك في 4 خطوات بسيطة وسريعة"}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            عملية بسيطة، سريعة، وآمنة. حول أثاثك المستعمل إلى كاش في 4 خطوات
-            فقط.
+            {description
+              ? description
+              : "  عملية بسيطة، سريعة، وآمنة. حول أثاثك المستعمل إلى كاش في 4 خطوات فقط."}
           </p>
         </div>
 
         {/* Steps Grid */}
         <div className="grid grid-cols-1  lg:grid-cols-2 gap-8">
-          {steps.map((step, index) => (
-            <div key={step.id} className="group relative">
-              {/* Connector Line (Desktop Only) */}
-              {index !== steps.length - 1 && (
-                <div
-                  className="hidden lg:block absolute top-12 right-1/2 w-full h-[2px] -z-10"
-                  style={{
-                    background: `linear-gradient(to left, ${colors.primary} 50%, transparent 50%)`,
-                    backgroundSize: "20px 100%",
-                  }}
-                />
-              )}
+          {details
+            ? details.map((step, index) => (
+                <div key={index} className="group relative">
+                  {/* Connector Line (Desktop Only) */}
+                  {index !== steps.length - 1 && (
+                    <div
+                      className="hidden lg:block absolute top-12 right-1/2 w-full h-[2px] -z-10"
+                      style={{
+                        background: `linear-gradient(to left, ${colors.primary} 50%, transparent 50%)`,
+                        backgroundSize: "20px 100%",
+                      }}
+                    />
+                  )}
 
-              {/* Card */}
-              <div
-                className="h-full bg-white border rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
-                style={{ borderColor: `${colors.primary}40` }} // 40 is opacity hex
-              >
-                {/* Icon Container */}
-                <div className="flex justify-center mb-6">
+                  {/* Card */}
                   <div
-                    className="w-20 h-20 rounded-2xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300 shadow-sm"
-                    style={{
-                      backgroundColor: colors.primary,
-                      color: colors.secondary,
-                    }}
+                    className="h-full bg-white border rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+                    style={{ borderColor: `${colors.primary}40` }} // 40 is opacity hex
                   >
-                    {step.icon}
-                  </div>
-                  {/* Step Number Badge */}
-                  <div
-                    className="absolute top-4 right-8 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white shadow-sm"
-                    style={{
-                      backgroundColor: colors.secondary,
-                      color: colors.primary,
-                    }}
-                  >
-                    {step.id}
+                    {/* Icon Container */}
+                    <div className="flex justify-center mb-6">
+                      <div
+                        className="w-20 h-20 rounded-2xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300 shadow-sm"
+                        style={{
+                          backgroundColor: colors.primary,
+                          color: colors.secondary,
+                        }}
+                      >
+                        {steps[index].icon}
+                      </div>
+                      {/* Step Number Badge */}
+                      <div
+                        className="absolute top-4 right-8 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white shadow-sm"
+                        style={{
+                          backgroundColor: colors.secondary,
+                          color: colors.primary,
+                        }}
+                      >
+                        {index + 1}
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="text-center">
+                      <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+                      <div className="text-sm font-medium opacity-70 mb-1 text-start mt-6">
+                        {step.desc}
+                      </div>
+                    </div>
                   </div>
                 </div>
+              ))
+            : steps.map((step, index) => (
+                <div key={step.id} className="group relative">
+                  {/* Connector Line (Desktop Only) */}
+                  {index !== steps.length - 1 && (
+                    <div
+                      className="hidden lg:block absolute top-12 right-1/2 w-full h-[2px] -z-10"
+                      style={{
+                        background: `linear-gradient(to left, ${colors.primary} 50%, transparent 50%)`,
+                        backgroundSize: "20px 100%",
+                      }}
+                    />
+                  )}
 
-                {/* Content */}
-                <div className="text-center">
-                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                  <p className="text-sm font-medium opacity-70 mb-6">
-                    {step.description}
-                  </p>
+                  {/* Card */}
+                  <div
+                    className="h-full bg-white border rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+                    style={{ borderColor: `${colors.primary}40` }} // 40 is opacity hex
+                  >
+                    {/* Icon Container */}
+                    <div className="flex justify-center mb-6">
+                      <div
+                        className="w-20 h-20 rounded-2xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300 shadow-sm"
+                        style={{
+                          backgroundColor: colors.primary,
+                          color: colors.secondary,
+                        }}
+                      >
+                        {step.icon}
+                      </div>
+                      {/* Step Number Badge */}
+                      <div
+                        className="absolute top-4 right-8 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white shadow-sm"
+                        style={{
+                          backgroundColor: colors.secondary,
+                          color: colors.primary,
+                        }}
+                      >
+                        {step.id}
+                      </div>
+                    </div>
 
-                  {/* List Items */}
-                  <ul className="text-right space-y-3">
-                    {step.details.map((detail, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-sm">
-                        <span className="mt-1 flex-shrink-0">
-                          <CheckCircle2
-                            size={16}
-                            style={{ color: colors.secondary }}
-                            className="opacity-60"
-                          />
-                        </span>
-                        <span className="opacity-90 leading-relaxed">
-                          {detail}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
+                    {/* Content */}
+                    <div className="text-center">
+                      <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+                      <p className="text-sm font-medium opacity-70 mb-6">
+                        {step.description}
+                      </p>
+
+                      {/* List Items */}
+                      <ul className="text-right space-y-3">
+                        {step.details.map((detail, idx) => (
+                          <li
+                            key={idx}
+                            className="flex items-start gap-3 text-sm"
+                          >
+                            <span className="mt-1 flex-shrink-0">
+                              <CheckCircle2
+                                size={16}
+                                style={{ color: colors.secondary }}
+                                className="opacity-60"
+                              />
+                            </span>
+                            <span className="opacity-90 leading-relaxed">
+                              {detail}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
+              ))}
         </div>
 
         {/* Call to Action Banner */}

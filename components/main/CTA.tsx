@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
 
-const CTA = () => {
+const CTA = ({ title, desc }: { title?: string; desc?: string }) => {
   return (
     <section className="mt-32">
       <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -24,18 +24,18 @@ const CTA = () => {
               <Card className="bg-white/50 rounded-2xl border-0 shadow-none">
                 <CardContent className="flex h-full flex-col items-start justify-center gap-4">
                   <h2 className="text-xl leading-tight font-semibold lg:text-2xl text-secondary">
-                    تواصل معنا اليوم لصفقة رابحة
+                    {title ? title : " تواصل معنا اليوم لصفقة رابحة"}
                   </h2>
                   <div>
                     <p className="text-muted-foreground mb-3 text-base">
-                      سواء تبي تبيع أو تشتري اثاث مستعمل، كلمنا. نحن هنا نساعدك.
-                      شراء اثاث مستعمل صار أسهل مع شركة موثوقة وعندها سمعة في
-                      السوق.
+                      {desc
+                        ? desc
+                        : " سواء تبي تبيع أو تشتري اثاث مستعمل، كلمنا. نحن هنا نساعدك. شراء اثاث مستعمل صار أسهل مع شركة موثوقة وعندها سمعة في  السوق."}
                     </p>
-                    <Button size={"lg"}>واتساب لنا</Button>
-                    <Button size={"lg"} variant={"secondary"}>
-                      اتصل بنا مباشرة
-                    </Button>
+                    <div className="mt-5 flex gap-x-3">
+                      <Button>واتساب لنا</Button>
+                      <Button variant={"secondary"}>اتصل بنا مباشرة</Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>

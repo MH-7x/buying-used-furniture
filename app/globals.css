@@ -127,6 +127,10 @@
   margin: 10px 0;
 }
 
+.bblr {
+  backdrop-filter: blur(10px);
+  --webkit-backdrop-filter: blur(10px);
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;

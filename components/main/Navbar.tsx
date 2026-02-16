@@ -5,11 +5,14 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="fixed md:w-[90%] w-[95%] top-2 left-1/2 translate-x-[-50%] z-999 md:bg-white/60 bg-white/50 backdrop-blur-lg drop-shadow-xl rounded-full py-1">
+    <header
+      className="fixed md:w-[90%] w-[95%] top-2 left-1/2 translate-x-[-50%] z-40 md:bg-white/70 bg-white/60 rounded-full md:py-2 py-1 backdrop-blur-md"
+      style={{ WebkitBackdropFilter: "blur(10px)" }}
+    >
       <input type="checkbox" id="mobile-menu" className="hidden peer" />
       <nav
         id="desktop-navbar"
-        className="hidden md:flex w-full px-5 items-center justify-between"
+        className="hidden md:flex w-full px-3 items-center justify-between"
       >
         <ul className="bg-white/40 rounded-full px-5 py-3 flex items-center gap-x-5">
           <li className="group relative flex items-center gap-x-1 hover:bg-primary transition-colors text-secondary px-4 py-1.5 rounded-2xl font-medium cursor-pointer">
@@ -45,14 +48,14 @@ const Navbar = () => {
             عن الشركة
           </li>
         </ul>
-        <div className="h-20 w-32  relative">
+        <Link href={"/"} className="w-[85px] h-[65px]  relative">
           <Image
             src={"/logo.svg"}
             alt="شعار شركة تشتري الأثاث المستعمل"
             fill
             className="absolute object-contain"
           />
-        </div>
+        </Link>
         <div className="bg-white/40 rounded-full px-5 py-3 flex items-center gap-x-5">
           <Link href={"#"}>
             <button className="flex cursor-pointer items-center gap-x-1 bg-secondary transition-colors text-primary px-4 py-1.5 rounded-2xl font-medium">
@@ -75,14 +78,14 @@ const Navbar = () => {
         id="mobile navbar"
         className="md:hidden flex items-center justify-between px-5 py-1"
       >
-        <div className="w-[85px] h-[65px]  relative">
+        <Link href={"/"} className="w-[85px] h-[65px]  relative">
           <Image
             alt=" شعار شركة تشتري الاثاث المستعمل"
             src={"/logo.svg"}
             fill
             className="object-cover"
           />
-        </div>
+        </Link>
         <div className="flex items-center gap-x-2">
           <button className="flex items-center gap-x-1 bg-secondary transition-colors text-primary px-4 py-1.5 rounded-2xl font-medium">
             واتساب لنا
