@@ -2,8 +2,12 @@ import { ReactNode } from "react";
 
 export default function FAQSection({
   faqs,
+  title,
+  desc,
 }: {
   faqs: { question: string; answer: ReactNode }[];
+  title?: string;
+  desc?: string;
 }) {
   return (
     <section className="mt-32 ">
@@ -11,11 +15,12 @@ export default function FAQSection({
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-secondary sm:text-4xl leading-tight">
-            الأسئلة الشائعة حول شراء الأثاث المستعمل
+            {title ? title : "الأسئلة الشائعة حول شراء الأثاث المستعمل"}
           </h2>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
-            فيما يلي بعض الأسئلة والأجوبة الشائعة من العملاء عند شراء الأثاث
-            المستعمل.
+            {desc
+              ? desc
+              : " فيما يلي بعض الأسئلة والأجوبة الشائعة من العملاء عند شراء الأثاث          المستعمل."}
           </p>
         </div>
 

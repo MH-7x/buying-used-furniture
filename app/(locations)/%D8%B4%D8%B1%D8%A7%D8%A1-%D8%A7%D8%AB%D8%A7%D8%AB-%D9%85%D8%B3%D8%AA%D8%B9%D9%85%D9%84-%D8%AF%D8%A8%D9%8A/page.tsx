@@ -27,7 +27,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Script from "next/script";
-
+import imgSrc from "@/public/loc/شراء-اثاث-مستعمل-دبي.jpg";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -54,7 +54,13 @@ const page = () => {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main className=" overflow-hidden">
-        <LocHeroSection />
+        <LocHeroSection
+          title=" شراء اثاث مستعمل دبي - أفضل الأسعار والخدمة السريعة"
+          desc=" هل تبحث عن شراء اثاث مستعمل دبي بسعر عادل وخدمة موثوقة؟ نحن شركة شراء
+          اثاث مستعمل متخصصة في شراء وبيع الأثاث والأجهزة المنزلية في دبي منذ
+          أكثر من عشر سنوات."
+          img={{ src: imgSrc, alt: "شراء اثاث مستعمل دبي" }}
+        />
         <div className="mt-16 max-w-6xl mx-auto md:px-0 px-4">
           <p className="text-2xl text-center font-medium text-secondary">
             نعمل في جميع مناطق دبي:
