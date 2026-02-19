@@ -5,6 +5,7 @@ import {
   Truck,
   MessageCircle,
   Banknote,
+  HandCoins,
 } from "lucide-react";
 import { ReactNode } from "react";
 
@@ -125,7 +126,11 @@ const SellProcessSection = ({
                           color: colors.secondary,
                         }}
                       >
-                        {steps[index].icon}
+                        {index === 4 ? (
+                          <HandCoins className="w-8 h-8" />
+                        ) : (
+                          steps[index].icon
+                        )}
                       </div>
                       {/* Step Number Badge */}
                       <div
