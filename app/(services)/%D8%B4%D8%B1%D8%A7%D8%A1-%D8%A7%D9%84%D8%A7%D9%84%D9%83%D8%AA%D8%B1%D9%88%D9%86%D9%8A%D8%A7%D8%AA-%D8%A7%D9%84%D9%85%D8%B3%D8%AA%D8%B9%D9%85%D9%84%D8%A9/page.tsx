@@ -1,3 +1,4 @@
+import CTA from "@/components/main/CTA";
 import ServiceHero from "@/components/main/ServiceHero";
 import ServiceSidebar from "@/components/main/ServiceSidebar";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
@@ -262,6 +263,12 @@ const BuyingElectronicsPage = () => {
 
         <ServiceSidebar />
       </div>
+      <CTA
+        title="تواصل معنا الحين"
+        desc="لو عندك أجهزة إلكترونية مستعملة وتبي تبيعها بسعر عادل وبدون تعب، تواصل معنا الحين على الواتساب أو عن طريق موقعنا الإلكتروني. نرد عليك بسرعة، ونجي لعندك في أقرب وقت.
+سواء كنت تنتقل من بيت لبيت، أو تجدد أثاث بيتك، أو عندك أجهزة زايدة ما تحتاجها – نحن هنا عشان نسهل عليك العملية ونعطيك أفضل قيمة لأجهزتك.
+"
+      />
     </main>
   );
 };

@@ -75,7 +75,7 @@ const Locations = () => {
             <div className="p-6 text-right" dir="rtl">
               <Link href={loc.link}>
                 <h3 className="text-xl font-bold text-secondary mb-3 ">
-                  {loc.title}
+                  شراء {loc.title}
                 </h3>
               </Link>
 
@@ -100,7 +100,7 @@ const Locations = () => {
             <Link href={"#"}>
               {" "}
               <h3 className="text-secondary text-xl font-bold">
-                اثاث مستعمل الفجيرة
+                شراء اثاث مستعمل الفجيرة
               </h3>
             </Link>
             <p className="mt-2 text-muted-foreground text-[15px] leading-relaxed">
@@ -122,7 +122,7 @@ const Locations = () => {
             <Link href={"#"}>
               {" "}
               <h3 className="text-secondary text-xl font-bold">
-                اثاث مستعمل أم القيوين
+                شراء اثاث مستعمل أم القيوين
               </h3>
             </Link>
             <p className="mt-2 text-muted-foreground text-[15px] leading-relaxed">
