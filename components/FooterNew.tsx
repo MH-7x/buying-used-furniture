@@ -12,7 +12,7 @@ import {
 import Image from "next/image";
 import { LocationLinks, servicesLinks } from "@/lib/Lists";
 
-const quickLinks = [
+export const quickLinks = [
   { title: "عن الشركة", link: "/about-us" },
   { title: " اتصل بنا", link: "/contact-us" },
   { title: "صالة العرض لدينا", link: "https://share.google/uLNlamfwJl2DVzPi6" },

@@ -32,7 +32,7 @@ export const LocationLinks = [
 export const servicesLinks = [
   {
     text: "شراء الأجهزة المنزلية المستعملة",
-    href: "#",
+    href: "/شراء-الأجهزة-المنزلية",
   },
   {
     text: "شراء الالكترونيات المستعملة",

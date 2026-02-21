@@ -171,3 +171,58 @@
     animation: fade-in 0.3s ease-out;
   }
 }
+
+.grid-wrapper {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.grid-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(to right, #c07d531f 1px, transparent 1px),
+    linear-gradient(to bottom, #c07d531f 1px, transparent 1px);
+  background-size: 20px 30px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+}
+
+#cont h2 {
+  @apply md:text-3xl text-2xl font-bold mb-4 text-secondary;
+}
+
+#cont h3,
+h4 {
+  @apply md:text-xl text-lg font-medium my-4 text-secondary;
+}
+
+#cont p {
+  @apply md:text-lg text-base mb-1 text-muted-foreground;
+}
+
+#cont ul,
+ol {
+  @apply md:text-lg text-base mb-1 text-muted-foreground;
+}
+
+#cont ul {
+  @apply list-disc list-inside;
+}
+
+#cont ol {
+  @apply list-decimal list-inside;
+}
