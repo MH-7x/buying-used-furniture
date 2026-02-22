@@ -37,7 +37,7 @@ const socialLinks = [
 
 const FooterNew = () => {
   return (
-    <footer className="relative bg-secondary text-primary overflow-hidden mt-20">
+    <footer className="relative bg-secondary overflow-hidden mt-20">
       {/* Decorative Background Elements (Blur/Gradient) */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8">
@@ -53,7 +53,7 @@ const FooterNew = () => {
             />
           </a>
 
-          <p className="max-w-2xl  text-primary leading-relaxed font-light">
+          <p className="max-w-2xl  text-white/90 leading-relaxed font-light">
             هل تفكر في تجديد منزلك أو الانتقال لبيت جديد؟ بيع الأثاث المستعمل لا
             يجب أن يكون عملية معقدة أو مقلقة. في شركة شراء اثاث مستعمل، نحن لا
             نضيع وقتك بمفاوضات طويلة وغير مجدية
@@ -62,7 +62,7 @@ const FooterNew = () => {
 
         {/* --- Contact Info Bar --- */}
         <div className=" mb-16">
-          <div className="flex flex-col md:flex-row justify-center md:items-center items-start gap-4 md:gap-12 text-sm font-medium">
+          <div className="flex flex-col md:flex-row justify-center md:items-center items-start gap-4 md:gap-12 text-sm font-medium text-white/90">
             <div className="flex items-center gap-3 cursor-pointer ">
               <div className="p-2 bg-secondary/10 rounded-full ">
                 <Phone size={18} className="text-primary" />
@@ -90,7 +90,7 @@ const FooterNew = () => {
         </div>
 
         {/* --- Main Grid Section --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16 text-white/90">
           {/* Column 1: Services */}
           <div className="space-y-6">
             <h3 className="text-lg font-bold text-white uppercase tracking-wider border-r-4 border-primary/40 pr-3">

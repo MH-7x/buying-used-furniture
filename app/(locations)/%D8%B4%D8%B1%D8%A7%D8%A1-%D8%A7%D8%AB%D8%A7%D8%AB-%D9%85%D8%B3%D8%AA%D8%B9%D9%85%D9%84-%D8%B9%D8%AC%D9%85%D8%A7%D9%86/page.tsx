@@ -8,6 +8,7 @@ import { AjmanFaqs } from "@/lib/faqsList";
 import Script from "next/script";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
+import CTA from "@/components/main/CTA";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -483,7 +484,7 @@ export default function AjmanPage() {
                   <span className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-[#f5d7cc] text-[#413332] font-bold text-lg mb-4">
                     {step.num}
                   </span>
-                  <h4 className="text-lg font-bold text-[#f5d7cc] mb-2">
+                  <h4 className="text-lg font-bold text-[#f5d7cc]! mb-2">
                     الخطوة{" "}
                     {step.num === 1
                       ? "الأولى"
@@ -649,7 +650,7 @@ export default function AjmanPage() {
             طوّرنا عملية من خمس مراحل تضمن جودة كل قطعة نبيعها:
           </p>
 
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {qualitySteps.map((step) => (
               <div
                 key={step.num}
@@ -732,6 +733,7 @@ export default function AjmanPage() {
           </div>
         </section>
         <FAQSection faqs={AjmanFaqs} />
+        <CTA desc="أرسل صور أثاثك عبر الواتساب الآن واحصل على عرض سعر خلال دقائق. حوّل أثاثك المستعمل إلى نقد اليوم." />
       </main>
     </>
   );
