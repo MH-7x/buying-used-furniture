@@ -14,7 +14,7 @@ import { LocationLinks, servicesLinks } from "@/lib/Lists";
 
 export const quickLinks = [
   { title: "عن الشركة", link: "/about-us" },
-  { title: " اتصل بنا", link: "/contact-us" },
+  { title: " اتصل بنا", link: "/اتصل-بنا" },
   { title: "صالة العرض لدينا", link: "https://share.google/uLNlamfwJl2DVzPi6" },
 
   { title: "مشاركات المدونة", link: "/blogs" },
