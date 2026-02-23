@@ -11,13 +11,17 @@ const HeroSection = () => {
     >
       <div className="mx-auto grid w-full max-w-(--breakpoint-xl) gap-12 px-4 py-12 lg:grid-cols-2 lg:py-0">
         <div className="my-auto">
-          <h1 className="mt-6 max-w-[17ch] font-semibold text-4xl leading-[1.2]! tracking-[-0.035em] md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem]">
-            شركة شراء أثاث مستعمل في الإمارات - نقد فوري
+          <h1 className="mt-6 font-semibold text-4xl leading-[1.2]! tracking-[-0.035em] md:text-5xl ">
+            شركة شراء أثاث مستعمل في الإمارات - بيع وشراء أثاث
           </h1>
           <p className="mt-6 max-w-[60ch] text-foreground/80 text-lg">
-            هل تفكر في تجديد منزلك أو الانتقال لبيت جديد؟ بيع الأثاث المستعمل لا
-            يجب أن يكون عملية معقدة أو مقلقة. في شركة شراء اثاث مستعمل، نحن لا
-            نضيع وقتك بمفاوضات طويلة وغير مجدية
+            هل تبحث عن شركة موثوقة في شراء اثاث مستعمل في الإمارات؟ نحن في شركة
+            شراء اثاث مستعمل نشتري جميع أنواع الأثاث المنزلي والمكتبي والأجهزة
+            الكهربائية بأعلى الأسعار في السوق.
+          </p>
+          <p className="mt-2 max-w-[60ch] text-foreground/80 text-lg">
+            مقرنا في الشارقة، ونصل إلى جميع الإمارات — دبي، أبوظبي، عجمان،
+            العين، رأس الخيمة، والفجيرة.
           </p>
           <div className="mt-12 flex items-center gap-4">
             <Button className="rounded-full text-base" size="lg">

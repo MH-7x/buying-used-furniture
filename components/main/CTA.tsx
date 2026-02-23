@@ -24,13 +24,15 @@ const CTA = ({ title, desc }: { title?: string; desc?: string }) => {
               <Card className="bg-white/50 rounded-2xl border-0 shadow-none">
                 <CardContent className="flex h-full flex-col items-start justify-center gap-4">
                   <h2 className="text-xl leading-tight font-semibold lg:text-2xl text-secondary">
-                    {title ? title : " تواصل معنا اليوم لصفقة رابحة"}
+                    {title
+                      ? title
+                      : "جاهز لبيع أثاثك المستعمل؟ تواصل معنا الآن"}
                   </h2>
                   <div>
                     <p className="text-muted-foreground mb-3 text-base">
                       {desc
                         ? desc
-                        : " سواء تبي تبيع أو تشتري اثاث مستعمل، كلمنا. نحن هنا نساعدك. شراء اثاث مستعمل صار أسهل مع شركة موثوقة وعندها سمعة في  السوق."}
+                        : "  سواء كنت تريد بيع أثاثك أو شراء أثاث مستعمل بحالة ممتازة — نحن هنا لخدمتك في أي إمارة. أرسل لنا صوراً على الواتساب أو اتصل بنا مباشرة واحصل على تقييم مجاني خلال دقائق."}
                     </p>
                     <div className="mt-5 flex gap-x-3">
                       <Button>واتساب لنا</Button>

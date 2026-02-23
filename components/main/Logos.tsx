@@ -13,8 +13,8 @@ interface Logos8Props {
 }
 
 const Logos8 = ({
-  title = "شراء جميع ماركات الأثاث",
-  subtitle = "نشترينشتري IKEA، Danube، Home Centre، Pan Emirates، Royal Furniture، Marina Home - وأي براند ثاني.",
+  title = "نتعامل مع أفضل العلامات التجارية — ايكيا، هوم سنتر، دانوب والمزيد",
+  subtitle = "نشتري أثاث جميع العلامات التجارية المعروفة في الإمارات، ونعرف قيمة كل علامة في سوق الأثاث المستعمل. هذه أبرز العلامات التي نتعامل معها يومياً:",
   logos = [
     {
       name: "Ikea",
@@ -46,12 +46,14 @@ const Logos8 = ({
     <section className={"mt-32 md:px-0 px-4"}>
       <div className="container">
         <div className="flex flex-col items-center text-center">
-          <h2 className="md:text-4xl text-3xl text-secondary   font-bold">
+          <h2 className="md:text-4xl text-3xl text-secondary max-w-xl mx-auto  font-bold">
             {title}
           </h2>
-          <p className="mt-5 text-muted-foreground">{subtitle}</p>
+          <p className="mt-5 text-muted-foreground max-w-3xl mx-auto">
+            {subtitle}
+          </p>
           <div
-            className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-6 lg:gap-12"
+            className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-6 lg:gap-12"
             dir="ltr"
           >
             {logos.map((logo, index) => (
