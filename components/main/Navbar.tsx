@@ -2,6 +2,7 @@ import { LocationLinks, servicesLinks } from "@/lib/Lists";
 import { ChevronDown, Menu, MessageCircle, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (
@@ -57,18 +58,23 @@ const Navbar = () => {
           />
         </Link>
         <div className="bg-white/40 rounded-full px-5 py-3 flex items-center gap-x-5">
-          <Link href={"#"}>
-            <button className="flex cursor-pointer items-center gap-x-1 bg-secondary transition-colors text-primary px-4 py-1.5 rounded-2xl font-medium">
-              واتساب لنا
-              <MessageCircle size={18} />
-            </button>
-          </Link>
-          <Link href={"#"}>
-            <button className="flex cursor-pointer items-center gap-x-1 bg-primary transition-colors text-secondary px-4 py-1.5 rounded-2xl font-medium">
-              اتصل بنا
-              <Phone size={18} />
-            </button>
-          </Link>
+          <Button
+            whatsapp
+            variant={"secondary"}
+            className="flex cursor-pointer items-center gap-x-1  px-4 py-1.5 rounded-2xl font-medium"
+          >
+            واتساب لنا
+            <MessageCircle size={18} />
+          </Button>
+
+          <Button
+            call
+            className="flex cursor-pointer items-center gap-x-1 bg-primary transition-colors text-secondary px-4 py-1.5 rounded-2xl font-medium"
+          >
+            اتصل بنا
+            <Phone size={18} />
+          </Button>
+
           <span className="flex items-center gap-x-1 text-sm text-muted-foreground px-4 py-1.5 rounded-2xl ">
             مفتوح 24/7
           </span>
@@ -184,7 +190,7 @@ const Navbar = () => {
 
           {/* عن الشركة without submenu */}
           <Link
-            href="#"
+            href="/عن-الشركة"
             className="flex items-center justify-between p-3 hover:bg-primary/10 rounded-lg transition-colors"
           >
             <span className="font-medium text-secondary">عن الشركة</span>
@@ -193,14 +199,20 @@ const Navbar = () => {
 
         {/* Bottom Buttons */}
         <div className="p-5 border-t space-y-3">
-          <button className="w-full flex items-center justify-center gap-x-2 bg-secondary transition-colors text-primary px-4 py-2.5 rounded-2xl font-medium hover:bg-secondary/90">
+          <Button
+            whatsapp={true}
+            className="w-full flex items-center justify-center gap-x-2 bg-secondary transition-colors text-primary px-4 py-2.5 rounded-2xl font-medium hover:bg-secondary/90"
+          >
             واتساب لنا
             <MessageCircle size={18} />
-          </button>
-          <button className="w-full flex items-center justify-center gap-x-2 bg-primary transition-colors text-secondary px-4 py-2.5 rounded-2xl font-medium hover:bg-primary/90">
+          </Button>
+          <Button
+            call={true}
+            className="w-full flex items-center justify-center gap-x-2 bg-primary transition-colors text-secondary px-4 py-2.5 rounded-2xl font-medium hover:bg-primary/90"
+          >
             اتصل بنا
             <Phone size={18} />
-          </button>
+          </Button>
         </div>
       </div>
     </header>

@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import heropic from "@/public/شراء-الاثاث-المستعمل.jpg";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -16,15 +17,26 @@ const HeroSection = () => {
           </h1>
           <p className="mt-6 max-w-[60ch] text-foreground/80 text-lg">
             هل تبحث عن شركة موثوقة في شراء اثاث مستعمل في الإمارات؟ نحن في شركة
-            شراء اثاث مستعمل نشتري جميع أنواع الأثاث المنزلي والمكتبي والأجهزة
-            الكهربائية بأعلى الأسعار في السوق.
+            شراء اثاث مستعمل نشتري{" "}
+            <Link href={"/شراء-الأثاث-المنزلي"}>جميع أنواع الأثاث المنزلي</Link>{" "}
+            <Link href={"/شراء-الاثاث-المكتبي-المستعمل"}>والمكتبي</Link>{" "}
+            <Link href={"/شراء-الالكترونيات-المستعملة"}>
+              والأجهزة الكهربائية
+            </Link>{" "}
+            بأعلى الأسعار في السوق.
           </p>
           <p className="mt-2 max-w-[60ch] text-foreground/80 text-lg">
-            مقرنا في الشارقة، ونصل إلى جميع الإمارات — دبي، أبوظبي، عجمان،
-            العين، رأس الخيمة، والفجيرة.
+            مقرنا في <Link href={"/شراء-اثاث-مستعمل-الشارقة"}>الشارقة</Link>،
+            ونصل إلى جميع الإمارات —{" "}
+            <Link href="/شراء-اثاث-مستعمل-دبي">دبي</Link>،{" "}
+            <Link href={"/شراء-اثاث-مستعمل-ابوظبي"}>أبوظبي</Link>،{" "}
+            <Link href={"/شراء-اثاث-مستعمل-عجمان"}>عجمان</Link>،{" "}
+            <Link href={"/شراء-اثاث-مستعمل-العين"}>العين</Link>،
+            <Link href={"/شراء-اثاث-مستعمل-راس-الخيمة"}>رأس الخيمة</Link>،
+            والفجيرة.
           </p>
           <div className="mt-12 flex items-center gap-4">
-            <Button className="rounded-full text-base" size="lg">
+            <Button whatsapp className="rounded-full text-base" size="lg">
               أرسل صور أثاثك على واتساب لتقييم{" "}
               <ArrowUpRight className="h-5! w-5!" />
             </Button>

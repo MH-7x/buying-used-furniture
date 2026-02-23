@@ -13,11 +13,11 @@ import Image from "next/image";
 import { LocationLinks, servicesLinks } from "@/lib/Lists";
 
 export const quickLinks = [
-  { title: "عن الشركة", link: "/about-us" },
+  { title: "عن الشركة", link: "/عن-الشركة" },
   { title: " اتصل بنا", link: "/اتصل-بنا" },
   { title: "صالة العرض لدينا", link: "https://share.google/uLNlamfwJl2DVzPi6" },
 
-  { title: "مشاركات المدونة", link: "/blogs" },
+  { title: "مشاركات المدونة", link: "#" },
   { title: "خريطة الموقع", link: "/" },
   { title: "شريكنا المتحرك", link: "https://abumuhammadmovers.com/" },
 
@@ -31,7 +31,7 @@ const socialLinks = [
   "https://www.facebook.com/rukun.al.arooba.used.furniture/",
   "https://www.instagram.com/",
   "https://www.pinterest.com/rukun_al_arooba_used_furniture/",
-  "https://wa.me/+971556461731?text=I%20Contact%20You%20For%20Used%20Furniture",
+  "https://wa.me/+971509684380?text=I%20Contact%20You%20For%20Used%20Furniture",
   "https://share.google/uLNlamfwJl2DVzPi6",
 ];
 

@@ -3,6 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { Slot } from "radix-ui";
 
 import { cn } from "@/lib/utils";
+import { App } from "@/lib/App";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive cursor-pointer",
@@ -42,13 +43,53 @@ function Button({
   variant = "default",
   size = "default",
   asChild = false,
+  whatsapp = false,
+  call = false,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
+    whatsapp?: boolean;
+    call?: boolean;
   }) {
   const Comp = asChild ? Slot.Root : "button";
 
+  if (whatsapp) {
+    return (
+      <a
+        href={`https://wa.me/${App.phone}?text=I%20Contact%20You%20For%20Used%20Furniture`}
+        target="_blank"
+        title="واتساب لنا"
+        rel="noopener noreferrer"
+      >
+        <Comp
+          data-slot="button"
+          data-variant={variant}
+          data-size={size}
+          className={cn(buttonVariants({ variant, size, className }))}
+          {...props}
+        />
+      </a>
+    );
+  }
+  if (call) {
+    return (
+      <a
+        href={`tel:${App.phone}`}
+        target="_blank"
+        title="اتصل بنا"
+        rel="noopener noreferrer"
+      >
+        <Comp
+          data-slot="button"
+          data-variant={variant}
+          data-size={size}
+          className={cn(buttonVariants({ variant, size, className }))}
+          {...props}
+        />
+      </a>
+    );
+  }
   return (
     <Comp
       data-slot="button"
