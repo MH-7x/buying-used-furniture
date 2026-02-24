@@ -9,6 +9,7 @@ import {
   XCircle,
   Store,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhySellToUs() {
   const features = [
@@ -55,7 +56,7 @@ export default function WhySellToUs() {
         {/* Header Section */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary leading-tight">
-            لماذا يختار العملاء شركة شراء اثاث مستعمل ؟
+            لماذا يختار العملاء <Link href="/">شركة شراء اثاث مستعمل</Link> ؟
           </h2>
           <p className="text-lg text-secondary max-w-2xl mx-auto">
             الفرق الجوهري بين خدمتنا الاحترافية وبين عشوائية الإعلانات المبوبة
@@ -150,9 +151,9 @@ export default function WhySellToUs() {
         <div className="mt-16 bg-white rounded-xl p-8 border border-slate-200 text-center max-w-3xl mx-auto">
           <p className="text-slate-600 text-lg">
             نحن في{" "}
-            <span className="font-medium text-secondary">
+            <Link href="/" className="font-medium text-secondary">
               شركة شراء اثاث مستعمل
-            </span>{" "}
+            </Link>{" "}
             نضمن لك تجربة بيع وشراء آمنة وسريعة ومريحة، بعيداً عن مفاجآت التعامل
             مع الغرباء.
           </p>

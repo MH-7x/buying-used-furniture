@@ -9,6 +9,7 @@ import {
   Info,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const FurnitureBuyingSection = () => {
   const sections = [
@@ -16,6 +17,7 @@ const FurnitureBuyingSection = () => {
       id: 1,
       title: "أثاث غرف النوم",
       icon: <BedDouble className="w-6 h-6" />,
+      href: "/شراء-الأثاث-المنزلي",
       image: "/loc/أثاث-غرف-النوم.jpg",
       items: [
         "غرف نوم كاملة",
@@ -34,6 +36,7 @@ const FurnitureBuyingSection = () => {
       description:
         "الصوفات والكنب من أكثر القطع طلباً في سوق الاثاث المستعمل دبي.",
       icon: <Sofa className="w-6 h-6" />,
+      href: "/شراء-الأثاث-المنزلي",
       image: "/loc/طقم-الصوفا-والمجالس.jpg",
       items: [
         "أطقم الصوفا (3+2+1 أو أي تشكيلة)",
@@ -51,6 +54,7 @@ const FurnitureBuyingSection = () => {
       description:
         "نشتري الأجهزة الكهربائية والإلكترونيات بشرط أنها تعمل بشكل جيد.",
       icon: <Tv className="w-6 h-6" />,
+      href: "/شراء-الأجهزة-المنزلية",
       image: "/loc/الأجهزة-المنزلية.jpg",
       items: [
         "الثلاجات (جميع الأحجام)",
@@ -66,6 +70,7 @@ const FurnitureBuyingSection = () => {
       title: "الأثاث المكتبي",
       description: "نشتري اثاث مكتبي مستعمل في دبي للشركات والمؤسسات.",
       icon: <Briefcase className="w-6 h-6" />,
+      href: "/شراء-الاثاث-المكتبي-المستعمل",
       image: "/loc/الأثاث-المكتبي.jpg",
       items: [
         "المكاتب",
@@ -80,6 +85,8 @@ const FurnitureBuyingSection = () => {
       id: 3,
       title: "طاولات الطعام والكراسي",
       icon: <Utensils className="w-6 h-6" />,
+
+      href: "/شراء-اثاث-فنادق-مستعمل",
       image: "/loc/طاولات-الطعام-والكراسي.jpg",
       items: [
         "طاولات الطعام الخشبية عليها طلب دائماً",
@@ -128,9 +135,11 @@ const FurnitureBuyingSection = () => {
 
               {/* Content */}
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-xl font-medium text-secondary mb-3">
-                  شراء {section.title} في دبي
-                </h3>
+                <Link href={section.href} className="hover:underline">
+                  <h3 className="text-xl font-medium text-secondary mb-3">
+                    شراء {section.title} في دبي
+                  </h3>
+                </Link>
 
                 {section.description && (
                   <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
