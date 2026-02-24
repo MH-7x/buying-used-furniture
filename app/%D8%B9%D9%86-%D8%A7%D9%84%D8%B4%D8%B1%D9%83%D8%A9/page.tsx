@@ -20,34 +20,40 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   {
     icon: Home,
     title: "شراء الأثاث المنزلي المستعمل",
+    href: "/شراء-الأثاث-المنزلي",
     description:
       "نشتري جميع أنواع الأثاث المنزلي من غرف النوم والمعيشة والمجالس العربية والكنب والستائر والسجاد",
   },
   {
     icon: Zap,
     title: "شراء الأجهزة الكهربائية المستعملة",
+    href: "/شراء-الأجهزة-المنزلية",
     description:
       "نشتري الثلاجات والغسالات ومكيفات الهواء والأفران والميكروويف بأسعار مناسبة",
   },
   {
     icon: Briefcase,
     title: "شراء الأثاث المكتبي المستعمل",
+    href: "/شراء-الاثاث-المكتبي-المستعمل",
     description: "خدمة شراء الأثاث المكتبي بالجملة للشركات والمكاتب والمؤسسات",
   },
   {
     icon: Hotel,
     title: "شراء أثاث الفنادق المستعمل",
+    href: "/شراء-اثاث-فنادق-مستعمل",
     description:
       "نشتري أثاث الفنادق بكميات كبيرة بما فيها الأسرّة والأرائك ومعدات الضيافة",
   },
   {
     icon: Monitor,
     title: "شراء الأجهزة الإلكترونية المستعملة",
+    href: "/شراء-الالكترونيات-المستعملة",
     description:
       "نشتري التلفزيونات وأجهزة الصوت والشاشات وأجهزة الألعاب بحالة جيدة",
   },
@@ -109,8 +115,12 @@ function App() {
                 وشفافية من مقرنا الرئيسي في الشارقة.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size={"lg"}>تواصل معنا</Button>
+                <Link href={"/اتصل-بنا"}>
+                  {" "}
+                  <Button size={"lg"}>تواصل معنا</Button>
+                </Link>
                 <Button
+                  whatsapp
                   size={"lg"}
                   variant={"secondary"}
                   className="border border-primary"
@@ -152,15 +162,15 @@ function App() {
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary mt-3 mb-6">
-                شركة شراء اثاث مستعمل – شريكك الأول في بيع وشراء الأثاث المستعمل
-                بالإمارات
+                <Link href="/">شركة شراء اثاث مستعمل</Link> – شريكك الأول في بيع
+                وشراء الأثاث المستعمل بالإمارات
               </h2>
               <div className="space-y-4 text-[#606060] leading-relaxed">
                 <p>
-                  إذا كنت تبحث عن شركة شراء اثاث مستعمل في الإمارات تتعامل معك
-                  بصدق وشفافية، فأنت في المكان الصحيح. نحن شركة شراء اثاث
-                  مستعمل، ونعمل في هذا المجال منذ أكثر من عشر سنوات من مقرنا
-                  الرئيسي في الشارقة.
+                  إذا كنت تبحث عن <Link href="/">شركة شراء اثاث مستعمل</Link> في
+                  الإمارات تتعامل معك بصدق وشفافية، فأنت في المكان الصحيح. نحن
+                  شركة شراء اثاث مستعمل، ونعمل في هذا المجال منذ أكثر من عشر
+                  سنوات من مقرنا الرئيسي في الشارقة.
                 </p>
                 <p>
                   خلال هذه السنوات، بنينا سمعة قوية تعتمد على الثقة والالتزام مع
@@ -246,9 +256,11 @@ function App() {
                   <div className="w-14 h-14 rounded-xl bg-[#413332] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-7 h-7 text-[#f5d7cc]" />
                   </div>
-                  <h3 className="text-lg font-bold text-secondary mb-3">
-                    {service.title}
-                  </h3>
+                  <Link href={service.href}>
+                    <h3 className="text-lg font-bold text-secondary mb-3">
+                      {service.title}
+                    </h3>
+                  </Link>
                   <p className="text-[#606060] text-sm leading-relaxed">
                     {service.description}
                   </p>
@@ -726,11 +738,11 @@ function App() {
             الواتساب. نحن هنا لخدمتك.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size={"lg"} variant={"secondary"}>
+            <Button call size={"lg"} variant={"secondary"}>
               <Phone className="w-5 h-5 ml-2" />
               اتصل بنا الآن
             </Button>
-            <Button size={"lg"} variant={"link"}>
+            <Button whatsapp size={"lg"} variant={"link"}>
               <MessageCircle className="w-5 h-5 ml-2" />
               تواصل عبر واتساب
             </Button>

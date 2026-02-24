@@ -23,7 +23,7 @@ export const quickLinks = [
 
   {
     title: "حول مطور الويب",
-    link: "https://wa.me/+923471309916?text=Hello%20Mashal,%20I%20Need%20Your%20Service%20!",
+    link: "https://wa.me/+971509684380?text=Hello%20Mashal,%20I%20Need%20Your%20Service%20!",
   },
 ];
 
@@ -67,7 +67,7 @@ const FooterNew = () => {
               <div className="p-2 bg-secondary/10 rounded-full ">
                 <Phone size={18} className="text-primary" />
               </div>
-              <span dir="ltr">055 6461731</span>
+              <span dir="ltr">+971 50 9684380</span>
             </div>
 
             <div className="hidden md:block w-px h-8 bg-white/10" />

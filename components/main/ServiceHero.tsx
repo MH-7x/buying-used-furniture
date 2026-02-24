@@ -21,7 +21,7 @@ const ServiceHero = ({
         </h1>
         <div className="max-w-3xl mx-auto text-center text mt-5">{desc}</div>
         <div className="flex gap-x-4 mt-5">
-          <Button variant={"secondary"} size={"lg"}>
+          <Button whatsapp variant={"secondary"} size={"lg"}>
             {" "}
             <svg
               fill="#f5d7cc"
@@ -45,7 +45,7 @@ const ServiceHero = ({
             </svg>{" "}
             واتساب لنا{" "}
           </Button>
-          <Button size={"lg"}>
+          <Button call size={"lg"}>
             <PhoneCall /> اتصل بنا{" "}
           </Button>
         </div>

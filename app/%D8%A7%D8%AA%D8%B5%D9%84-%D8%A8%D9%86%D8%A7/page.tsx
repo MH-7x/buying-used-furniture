@@ -1,5 +1,6 @@
 import Form from "@/components/Form";
 import CTA from "@/components/main/CTA";
+import Locations from "@/components/main/Locations";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { MailIcon, MapPinIcon, MessageCircle, PhoneIcon } from "lucide-react";
 import Link from "next/link";
@@ -29,10 +30,10 @@ const Contact = () => (
           تواصل معنا لشراء وبيع الأثاث المستعمل في الإمارات
         </h2>
         <p className="mt-5 text-base text-muted-foreground sm:text-lg max-w-3xl">
-          تواصل مع شركة شراء اثاث مستعمل للحصول على تقييم عادل واحترافي لأثاثك
-          مع استجابة سريعة ومضمونة خلال 10 دقائق فقط. بفضل خبرتنا التي تزيد عن
-          عقد في كافة أنحاء الإمارات، نضمن لك تجربة &quot;شراء-بيع-نقل&quot;
-          سلسة وموثوقة يمكنك الاعتماد عليها تماماً.
+          تواصل مع <Link href="/">شركة شراء اثاث مستعمل</Link> للحصول على تقييم
+          عادل واحترافي لأثاثك مع استجابة سريعة ومضمونة خلال 10 دقائق فقط. بفضل
+          خبرتنا التي تزيد عن عقد في كافة أنحاء الإمارات، نضمن لك تجربة
+          &quot;شراء-بيع-نقل&quot; سلسة وموثوقة يمكنك الاعتماد عليها تماماً.
         </p>
         <div className="mt-16 flex flex-col gap-16 md:gap-10 lg:flex-row">
           <div className="grid w-full max-w-3xl grid-cols-1 gap-3 *:rounded-3xl *:bg-background *:p-6 sm:grid-cols-2 lg:col-span-2">
@@ -109,6 +110,7 @@ const Contact = () => (
         </div>
       </div>
     </main>
+    <Locations />
     <CTA />
   </>
 );

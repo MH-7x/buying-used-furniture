@@ -45,9 +45,11 @@ const Navbar = () => {
               ))}
             </div>
           </li>
-          <li className="flex items-center gap-x-1 hover:bg-primary transition-colors text-secondary px-4 py-1.5 rounded-2xl font-medium cursor-pointer">
-            عن الشركة
-          </li>
+          <Link href={"/عن-الشركة"}>
+            <li className="flex items-center gap-x-1 hover:bg-primary transition-colors text-secondary px-4 py-1.5 rounded-2xl font-medium cursor-pointer">
+              عن الشركة
+            </li>
+          </Link>
         </ul>
         <Link href={"/"} className="w-[85px] h-[65px]  relative">
           <Image
