@@ -247,8 +247,11 @@ const FurniturePriceGuide = () => {
             </p>
           </div>
           <div className="md:mt-8 mt-16 flex gap-5 flex-wrap ">
-            <Button size={"lg"}>تواصل عبر الواتساب للتقييم</Button>
+            <Button whatsapp size={"lg"}>
+              تواصل عبر الواتساب للتقييم
+            </Button>
             <Button
+              call
               size={"lg"}
               variant={"ghost"}
               className="text-primary hover:text-secondary underline underline-offset-4 "

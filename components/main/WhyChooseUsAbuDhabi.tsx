@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const WhyChooseUsAbuDhabi = () => {
   return (
@@ -60,11 +61,11 @@ const WhyChooseUsAbuDhabi = () => {
                 الصراحة في التعامل
               </h3>
               <p className="text-muted-foreground leading-relaxed ">
-                في شركة شراء اثاث مستعمل، بنينا سمعتنا على أساس بسيط – الصراحة
-                في التعامل. ما نقوله على الهاتف هو نفسه ما يحصل عند الباب. لا
-                مفاجآت ولا تغيير في السعر بعد المعاينة. وهذا الشيء تعلمناه من 10
-                سنوات خبرة في السوق الإماراتي، مع آلاف العملاء في الشارقة ودبي
-                وابوظبي.
+                <Link href="/">في شركة شراء اثاث مستعمل,</Link> بنينا سمعتنا على
+                أساس بسيط – الصراحة في التعامل. ما نقوله على الهاتف هو نفسه ما
+                يحصل عند الباب. لا مفاجآت ولا تغيير في السعر بعد المعاينة. وهذا
+                الشيء تعلمناه من 10 سنوات خبرة في السوق الإماراتي، مع آلاف
+                العملاء في الشارقة ودبي وابوظبي.
               </p>
             </div>
           </div>
@@ -230,7 +231,7 @@ const WhyChooseUsAbuDhabi = () => {
             السنوات.&quot;
           </p>
           <div className="mt-8">
-            <Button variant={"secondary"} size={"lg"}>
+            <Button call variant={"secondary"} size={"lg"}>
               تواصل معنا الآن
             </Button>
           </div>

@@ -29,7 +29,7 @@ const LocHeroSection = ({
         <p className="mt-5 md:text-lg text-gray-200 max-w-3xl text-center">
           {desc}
         </p>
-        <Button className="mt-7" size="lg">
+        <Button whatsapp className="mt-7" size="lg">
           <WhatsAppSvg fill="#413332" />
           تواصل معنا عبر واتساب
         </Button>

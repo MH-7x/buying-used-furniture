@@ -20,6 +20,7 @@ import {
   Info,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
 
 export const metadata = MetadataTemplate({
@@ -92,7 +93,7 @@ const AbuDhabiPage = () => {
               ميزانيتهم. خدمة بيع وشراء اثاث مستعمل ابوظبي عندنا مصممة لتكون
               سهلة وسريعة من أول تواصل لآخر خطوة.
             </p>
-            <Button size={"lg"} className="mt-5">
+            <Button whatsapp size={"lg"} className="mt-5">
               أرسل صور أثاثك عبر الواتساب الآن{" "}
             </Button>
           </div>
@@ -133,6 +134,7 @@ const AbuDhabiPage = () => {
                   id: 1,
                   title: "شراء كنب وأرائك ومجالس مستعملة",
                   image: "/loc/شراء-كنب-وأرائك-ومجالس-مستعملة.jpg",
+                  link: "/شراء-الأثاث-المنزلي",
                   icon: <Bed className="w-6 h-6" />,
 
                   description: (
@@ -160,6 +162,7 @@ const AbuDhabiPage = () => {
                   id: 2,
                   title: "شراء غرف نوم وأسرّة مستعملة",
                   image: "/loc/شراء-غرف-نوم-وأسرّة-مستعملة.jpg",
+                  link: "/شراء-الأثاث-المنزلي",
                   icon: <BedDouble className="w-6 h-6" />,
 
                   description: (
@@ -181,6 +184,7 @@ const AbuDhabiPage = () => {
                   id: 3,
                   title: "شراء أجهزة كهربائية ومنزلية مستعملة",
                   image: "/loc/شراء-أجهزة-كهربائية-ومنزلية-مستعملة.jpg",
+                  link: "/شراء-الأجهزة-المنزلية",
                   icon: <Bolt className="w-6 h-6" />,
 
                   description: (
@@ -204,6 +208,7 @@ const AbuDhabiPage = () => {
                   id: 4,
                   title: "شراء أثاث مكتبي مستعمل في ابوظبي",
                   image: "/loc/شراء-أثاث-مكتبي-مستعمل-في-ابوظبي.jpg",
+                  link: "/شراء-الاثاث-المكتبي-المستعمل",
                   icon: <Building2 className="w-6 h-6" />,
 
                   description: (
@@ -226,6 +231,7 @@ const AbuDhabiPage = () => {
                   id: 5,
                   title: "شراء أثاث مطابخ وغرف طعام مستعملة",
                   image: "/loc/شراء-أثاث-مطابخ-وغرف-طعام-مستعملة.jpg",
+                  link: "/شراء-الأثاث-المنزلي",
                   icon: <CookingPot className="w-6 h-6" />,
 
                   description: (
@@ -265,9 +271,11 @@ const AbuDhabiPage = () => {
 
                   {/* Content */}
                   <div className="p-6 flex-1 flex flex-col">
-                    <h3 className="text-xl font-medium text-secondary mb-5">
-                      {section.title}
-                    </h3>
+                    <Link href={section.link} className="hover:underline">
+                      <h3 className="text-xl font-medium text-secondary mb-5">
+                        {section.title}
+                      </h3>
+                    </Link>
 
                     {section.description && (
                       <div className="text-muted-foreground flex flex-col gap-y-2 mb-4 leading-relaxed">

@@ -8,6 +8,7 @@ import {
   HandCoins,
 } from "lucide-react";
 import { ReactNode } from "react";
+import { Button } from "../ui/button";
 
 const SellProcessSection = ({
   title,
@@ -243,23 +244,19 @@ const SellProcessSection = ({
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <button
-                className="px-8 py-4 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
-                style={{
-                  backgroundColor: colors.primary,
-                  color: colors.secondary,
-                }}
-              >
+              <Button size={"lg"} className="" whatsapp>
                 <MessageCircle size={20} />
                 تواصل واتساب
-              </button>
-              <button
-                className="px-8 py-4 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 border-2 flex items-center justify-center gap-2"
-                style={{ borderColor: colors.primary, color: colors.primary }}
+              </Button>
+              <Button
+                variant={"outline"}
+                call
+                size={"lg"}
+                className="px-8 py-4 bg-transparent text-primary border-primary hover:bg-transparent hover:scale-105 transition-transform duration-300"
               >
                 <Phone size={20} />
                 اتصل بنا
-              </button>
+              </Button>
             </div>
           </div>
 

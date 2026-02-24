@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 const CTA = ({ title, desc }: { title?: string; desc?: string }) => {
   return (
@@ -35,8 +36,10 @@ const CTA = ({ title, desc }: { title?: string; desc?: string }) => {
                         : "  سواء كنت تريد بيع أثاثك أو شراء أثاث مستعمل بحالة ممتازة — نحن هنا لخدمتك في أي إمارة. أرسل لنا صوراً على الواتساب أو اتصل بنا مباشرة واحصل على تقييم مجاني خلال دقائق."}
                     </p>
                     <div className="mt-5 flex gap-x-3">
-                      <Button>واتساب لنا</Button>
-                      <Button variant={"secondary"}>اتصل بنا مباشرة</Button>
+                      <Button whatsapp>واتساب لنا</Button>
+                      <Link href="/اتصل-بنا">
+                        <Button variant={"secondary"}>اتصل بنا مباشرة</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
