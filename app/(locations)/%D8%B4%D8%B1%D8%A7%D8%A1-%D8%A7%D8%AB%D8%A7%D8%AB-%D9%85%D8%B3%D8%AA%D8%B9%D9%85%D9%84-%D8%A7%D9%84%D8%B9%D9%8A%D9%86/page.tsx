@@ -9,6 +9,7 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 import imgSrc from "@/public/loc/شراء-اثاث-مستعمل-العين.jpg";
 import { ClockArrowUp, DollarSign, MapPinCheck, Trophy } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
 
 export const metadata = MetadataTemplate({
@@ -287,9 +288,11 @@ const AlAinPage = () => {
                 src="/loc/شراء-الأثاث-المنزلي -المستعمل.jpg"
               />
               <div className="p-6">
-                <h3 className="mb-3 text-xl font-bold text-[#413332]">
-                  شراء الأثاث المنزلي المستعمل
-                </h3>
+                <Link href="/شراء-الأثاث-المنزلي">
+                  <h3 className="mb-3 text-xl font-bold text-[#413332]">
+                    شراء الأثاث المنزلي المستعمل
+                  </h3>
+                </Link>
                 <p className="mb-3 leading-relaxed">
                   نشتري كل أنواع الأثاث المنزلي المستعمل في العين: كنب ومجالس
                   بجميع الأحجام، غرف نوم كاملة مع السرير والدولاب والتسريحة،
@@ -312,9 +315,12 @@ const AlAinPage = () => {
                 src="/loc/شراء-الأجهزة-الكهربائية-المستعملة-في-العين.jpg"
               />
               <div className="p-6">
-                <h3 className="mb-3 text-xl font-bold text-[#413332]">
-                  شراء الأجهزة الكهربائية المستعملة في العين
-                </h3>
+                <Link href="/شراء-الأجهزة-المنزلية">
+                  <h3 className="mb-3 text-xl font-bold text-[#413332]">
+                    شراء الأجهزة الكهربائية المستعملة في العين
+                  </h3>
+                </Link>
+
                 <p className="mb-3 leading-relaxed">
                   بجانب الأثاث، نشتري جميع الأجهزة الكهربائية المستعملة في
                   العين. ثلاجات، غسالات، مكيفات سبليت وشباك، تلفزيونات، أفران،
@@ -337,9 +343,12 @@ const AlAinPage = () => {
                 src="/loc/شراء-أثاث-المكاتب-المستعمل-في-العين.jpg"
               />
               <div className="p-6">
-                <h3 className="mb-3 text-xl font-bold text-[#413332]">
-                  شراء أثاث المكاتب المستعمل في العين
-                </h3>
+                <Link href="/شراء-الاثاث-المكتبي-المستعمل">
+                  <h3 className="mb-3 text-xl font-bold text-[#413332]">
+                    شراء أثاث المكاتب المستعمل في العين
+                  </h3>
+                </Link>
+
                 <p className="leading-relaxed">
                   عندك مكتب يتم إغلاقه أو تجديده؟ نشتري{" "}
                   <strong>اثاث مكتبي مستعمل في العين</strong>: مكاتب عمل، كراسي
@@ -745,21 +754,13 @@ const AlAinPage = () => {
 
           <nav aria-label="روابط المدن الأخرى">
             <ul className="flex flex-wrap gap-3">
-              {[
-                "الشارقة",
-                "دبي",
-                "أبوظبي",
-                "عجمان",
-                "رأس الخيمة",
-                "الفجيرة",
-                "أم القيوين",
-              ].map((city, i) => (
-                <li key={city}>
+              {LocationLinks.map((city, i) => (
+                <li key={i}>
                   <a
-                    href={LocationLinks[i].href}
+                    href={city.href}
                     className="inline-block rounded-full border border-[#413332] px-5 py-2 text-sm font-medium text-[#413332] transition hover:bg-[#413332] hover:text-white"
                   >
-                    {city}
+                    {city.text}
                   </a>
                 </li>
               ))}
