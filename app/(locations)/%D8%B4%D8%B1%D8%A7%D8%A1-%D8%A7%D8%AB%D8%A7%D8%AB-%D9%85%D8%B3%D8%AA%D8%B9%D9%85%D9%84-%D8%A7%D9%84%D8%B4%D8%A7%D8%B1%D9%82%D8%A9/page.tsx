@@ -25,6 +25,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
 export const metadata = MetadataTemplate({
   data: {
@@ -91,7 +92,7 @@ const SharjahPage = () => {
               بالكامل.
             </p>
 
-            <Button size={"lg"} className="mt-5">
+            <Button whatsapp size={"lg"} className="mt-5">
               أرسل صور أثاثك عبر الواتساب الآن{" "}
             </Button>
           </div>
@@ -219,6 +220,7 @@ const SharjahPage = () => {
                   id: 1,
                   title: "شراء اثاث منزلي مستعمل في الشارقة",
                   image: "/loc/شراء-اثاث-منزلي-مستعمل-في-الشارقة.jpg",
+                  href: "/شراء-الأثاث-المنزلي",
                   icon: <HomeIcon className="w-6 h-6" />,
 
                   description: (
@@ -247,6 +249,7 @@ const SharjahPage = () => {
                   id: 2,
                   title: "شراء اثاث مكتبي مستعمل في الشارقة",
                   image: "/loc/شراء-اثاث-مكتبي-مستعمل-في-الشارقة.jpg",
+                  href: "/شراء-الاثاث-المكتبي-المستعمل",
                   icon: <Building2 className="w-6 h-6" />,
 
                   description: (
@@ -267,6 +270,7 @@ const SharjahPage = () => {
                   id: 3,
                   title: "شراء أجهزة منزلية وإلكترونيات مستعملة",
                   image: "/loc/شراء-أجهزة-منزلية-وإلكترونيات-مستعملة.jpg",
+                  href: "/شراء-الأجهزة-المنزلية",
                   icon: <Refrigerator className="w-6 h-6" />,
 
                   description: (
@@ -287,6 +291,7 @@ const SharjahPage = () => {
                   id: 4,
                   title: "شراء اثاث فنادق وشركات بالجملة",
                   image: "/loc/شراء-اثاث-فنادق-وشركات-بالجملة.jpg",
+                  href: "/شراء-اثاث-فنادق-مستعمل",
                   icon: <Hotel className="w-6 h-6" />,
 
                   description: (
@@ -326,9 +331,12 @@ const SharjahPage = () => {
 
                   {/* Content */}
                   <div className="p-6 flex-1 flex flex-col">
-                    <h3 className="text-xl font-medium text-secondary mb-5">
-                      {section.title}
-                    </h3>
+                    <Link href={section.href} className="hover:underline">
+                      {" "}
+                      <h3 className="text-xl font-medium text-secondary mb-5">
+                        {section.title}
+                      </h3>
+                    </Link>
 
                     {section.description && (
                       <div className="text-muted-foreground flex flex-col gap-y-2 mb-4 leading-relaxed">
@@ -565,11 +573,11 @@ const SharjahPage = () => {
         <section className="max-w-4xl mt-32 mx-auto md:px-0 px-4">
           <h2 className="md:text-4xl text-3xl text-secondary font-bold">
             الاقتصاد الدائري والاستدامة - <br className="md:block hidden" />
-            لماذا شراء الأثاث المستعمل مهم؟
+            <Link href={"/"}>لماذا شراء الأثاث المستعمل</Link> مهم؟
           </h2>
           <p className="mt-10 text-muted-foreground max-w-3xl">
-            كثير من الناس يشوفون شراء وبيع الأثاث المستعمل كمجرد وسيلة لتوفير
-            المال. وهو فعلاً كذلك. لكن الموضوع أكبر من كذا.
+            كثير من الناس يشوفون <Link href="/">شراء وبيع الأثاث المستعمل</Link>{" "}
+            كمجرد وسيلة لتوفير المال. وهو فعلاً كذلك. لكن الموضوع أكبر من كذا.
           </p>
           <p className="mt-2 text-muted-foreground">
             كل سنة، آلاف الأطنان من الأثاث في الإمارات ينتهي بها المطاف في مكبات

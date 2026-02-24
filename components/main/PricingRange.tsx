@@ -13,6 +13,7 @@ import {
   ScrollText,
   CalendarClock,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function PricingRange() {
   // Brand Colors
@@ -218,16 +219,23 @@ export default function PricingRange() {
                 </span>
               </p>
             </div>
-            <button
-              className="mt-4 md:mt-0 md:mr-auto px-8 py-3 rounded-xl font-bold transition-transform hover:-translate-y-1 active:translate-y-0 relative z-10 flex items-center gap-2 shadow-lg"
-              style={{
-                backgroundColor: colors.secondary,
-                color: colors.primary,
-              }}
+            <Link
+              href="https://wa.me/+971509684380?text=I%20Contact%20You%20For%20Used%20Furniture"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="mt-4 md:mt-0 md:mr-auto "
             >
-              <Camera size={20} />
-              أرسل الصور الآن
-            </button>
+              <button
+                className="cursor-pointer px-8 py-3 rounded-xl font-bold transition-transform hover:-translate-y-1 active:translate-y-0 relative z-10 flex items-center gap-2 shadow-lg"
+                style={{
+                  backgroundColor: colors.secondary,
+                  color: colors.primary,
+                }}
+              >
+                <Camera size={20} />
+                أرسل الصور الآن
+              </button>
+            </Link>
           </div>
 
           {/* Payment Methods Section */}
