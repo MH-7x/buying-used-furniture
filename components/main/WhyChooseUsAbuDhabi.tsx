@@ -19,10 +19,10 @@ const WhyChooseUsAbuDhabi = () => {
       <section className="relative bg-linear-to-b from-secondary to-secondary/90 text-white py-16 px-4 mt-36 md:px-8 overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         <div className="max-w-6xl mx-auto relative z-10 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
             لماذا نحن أفضل شركة <br />
             شراء اثاث مستعمل في ابوظبي؟
-          </h1>
+          </h2>
           <div className="w-40 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
       </section>

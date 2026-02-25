@@ -6,6 +6,7 @@ import Navbar from "@/components/main/Navbar";
 import FooterNew from "@/components/FooterNew";
 import { App } from "@/lib/App";
 import { Toaster } from "@/components/ui/sonner";
+import GTM from "@/components/GTM";
 
 const rubik = Rubik({
   subsets: ["arabic"],
@@ -56,6 +57,7 @@ export default function RootLayout({
         <DirectionProvider dir="rtl">
           <Navbar />
           {children}
+          <GTM />
           <FooterNew />
           <Toaster />
         </DirectionProvider>

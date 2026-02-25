@@ -26,9 +26,9 @@ const Contact = () => (
         <b className="font-semibold text-muted-foreground text-sm uppercase">
           اتصل بنا
         </b>
-        <h2 className="mt-3 font-semibold text-3xl tracking-tight md:text-4xl text-secondary">
+        <h1 className="mt-3 font-semibold text-3xl tracking-tight md:text-4xl text-secondary">
           تواصل معنا لشراء وبيع الأثاث المستعمل في الإمارات
-        </h2>
+        </h1>
         <p className="mt-5 text-base text-muted-foreground sm:text-lg max-w-3xl">
           تواصل مع <Link href="/">شركة شراء اثاث مستعمل</Link> للحصول على تقييم
           عادل واحترافي لأثاثك مع استجابة سريعة ومضمونة خلال 10 دقائق فقط. بفضل

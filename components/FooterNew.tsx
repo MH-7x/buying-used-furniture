@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { LocationLinks, servicesLinks } from "@/lib/Lists";
+import MyLink from "./MyLink";
 
 export const quickLinks = [
   { title: "عن الشركة", link: "/عن-الشركة" },
@@ -189,13 +190,7 @@ const FooterNew = () => {
               </a>
             </div>
             <div className="hidden md:block w-1 h-1 bg-gray-600 rounded-full" />
-            <a
-              href="https://wa.me/+923471309916?text=Hello%20Mashal,%20I%20Need%20Your%20Service%20!"
-              rel="noopener noreferrer"
-              className=" "
-            >
-              التطوير والصيانة بواسطة مشعل حريرة
-            </a>
+            <MyLink />
           </div>
 
           {/* Social Icons */}
