@@ -75,7 +75,9 @@ const FooterNew = () => {
               <div className="p-2 bg-whitesecbg-secondary510rounded-full ">
                 <MapPin size={18} className="text-primary" />
               </div>
-              <span dir="ltr">55 29th St - Al Barsha Second - Dubai</span>
+              <span dir="ltr">
+                94 19th St Al Barsha Second, Al Barsha Dubai
+              </span>
             </div>
 
             <div className="hidden md:block w-px h-8 bg-white/10" />
@@ -158,7 +160,7 @@ const FooterNew = () => {
             </h3>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1074.1995163109973!2d55.220034124254624!3d25.0963738933013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6c012d7357cf%3A0xdb8628979d5437b!2s55%2029th%20St%20-%20Al%20Barsha%20Second%20-%20Al%20Barsha%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1772001420128!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.1387832604737!2d55.220110399999996!3d25.097163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6ddc3e3ffc31%3A0xad331828860361dd!2z2LTYsdmD2Kkg2LTYsdin2KEg2KfYq9in2Ksg2YXYs9iq2LnZhdmE!5e0!3m2!1sen!2s!4v1772001782016!5m2!1sen!2s"
               className="w-full h-48  bg-slate-800 rounded-lg overflow-hidden relative group border border-white/10 hover:border-yellow-500/50 transition-colors"
               title="Our Store Location in Google Maps"
               allowFullScreen

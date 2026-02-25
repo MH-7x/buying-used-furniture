@@ -80,11 +80,11 @@ const Contact = () => (
               </p>
               <Link
                 className="font-medium text-secondary"
-                href="https://www.google.com/maps/search/55+29th+St+Al+Barsha+Second+Dubai"
+                href="https://maps.app.goo.gl/Rms3mm7wu9Xhp9da9"
                 target="_blank"
               >
-                55 شارع 29 - البرشاء الثانية
-                <br /> دبي، الإمارات
+                94 شارع 19 البرشاء الثانية،
+                <br /> البرشاء دبي
               </Link>
             </div>
             <div>
