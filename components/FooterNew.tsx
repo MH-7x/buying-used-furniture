@@ -28,11 +28,11 @@ export const quickLinks = [
 ];
 
 const socialLinks = [
-  "https://www.facebook.com/rukun.al.arooba.used.furniture/",
+  "https://www.facebook.com/",
   "https://www.instagram.com/",
-  "https://www.pinterest.com/rukun_al_arooba_used_furniture/",
+  "https://www.pinterest.com/",
   "https://wa.me/+971509684380?text=I%20Contact%20You%20For%20Used%20Furniture",
-  "https://share.google/uLNlamfwJl2DVzPi6",
+  "https://maps.app.goo.gl/eZRzQYxGRfhrBMSR6",
 ];
 
 const FooterNew = () => {

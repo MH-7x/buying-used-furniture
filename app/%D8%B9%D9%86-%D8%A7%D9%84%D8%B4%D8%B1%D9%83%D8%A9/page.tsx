@@ -21,6 +21,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 
 const services = [
   {
@@ -89,6 +90,20 @@ const coverageAreas = [
   "رأس الخيمة",
   "الفجيرة",
 ];
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "عن شركة شراء اثاث مستعمل في الإمارات | خبرة +10 سنوات",
+      desc: "شركة شراء اثاث مستعمل في دبي والإمارات. نشتري أثاثك المنزلي والمكتبي والأجهزة الكهربائية بأسعار عادلة وشفافية تامة. خدمة 24/7 مع نقل مجاني وتقييم فوري.",
+    },
+    image: {
+      path: "/بيع-وشراء-الأثاث-المستعمل.jpg",
+      alt: "بيع وشراء الاثاث المستعمل",
+    },
+    path: "/عن-الشركة",
+  },
+});
 
 function App() {
   return (
