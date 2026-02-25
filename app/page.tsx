@@ -1,4 +1,3 @@
-import Content from "@/components/main/Content";
 import CTA from "@/components/main/CTA";
 import FAQs from "@/components/main/FAQs";
 import { WhyChooseUs } from "@/components/main/Feature";
@@ -6,7 +5,6 @@ import HeroSection from "@/components/main/HeroSection";
 import InspectionProcess from "@/components/main/InspectionProcess";
 import Locations from "@/components/main/Locations";
 import { Logos8 } from "@/components/main/Logos";
-import SellProcessSection from "@/components/main/SellingProcess";
 import Services from "@/components/main/Services";
 import { Button } from "@/components/ui/button";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
@@ -160,14 +158,14 @@ export default function Hero() {
             عن شركتنا — أكثر من 10 سنوات في خدمة سوق الاثاث المستعمل
           </h2>
           <p className="mt-10 text-muted-foreground max-w-3xl">
-            شركة شراء اثاث مستعمل تأسست في الشارقة لتقديم حل متكامل لبيع وشراء
+            شركة شراء اثاث مستعمل تأسست في دبي لتقديم حل متكامل لبيع وشراء
             الأثاث المستعمل في الإمارات. بدأنا قبل أكثر من عشر سنوات برؤية
             واضحة: نريد أن نكون البديل الموثوق للأسواق العشوائية والتجار غير
             المرخصين.
           </p>
           <p className="mt-2 text-muted-foreground max-w-3xl">
             اليوم، لدينا فريق متخصص يضم مقيّمين محترفين، فنيي ترميم وتنجيد،
-            ومنسقي خدمات لوجستية. لدينا معرض فعلي في الشارقة يمكنك زيارته، وورشة
+            ومنسقي خدمات لوجستية. لدينا معرض فعلي في دبي يمكنك زيارته، وورشة
             ترميم مجهزة بالكامل، وأسطول سيارات نقل مخصصة.
           </p>
           <div className="mt-5">

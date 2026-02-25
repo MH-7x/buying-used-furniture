@@ -75,7 +75,7 @@ const FooterNew = () => {
               <div className="p-2 bg-whitesecbg-secondary510rounded-full ">
                 <MapPin size={18} className="text-primary" />
               </div>
-              <span>شارع الاستقلال، بو شغارة، الحي القاسمية</span>
+              <span dir="ltr">55 29th St - Al Barsha Second - Dubai</span>
             </div>
 
             <div className="hidden md:block w-px h-8 bg-white/10" />
@@ -156,13 +156,15 @@ const FooterNew = () => {
             <h3 className="text-lg font-bold text-white uppercase tracking-wider border-r-4 border-primary/40 pr-3">
               قم بزيارة المتجر
             </h3>
+
             <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1074.1995163109973!2d55.220034124254624!3d25.0963738933013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6c012d7357cf%3A0xdb8628979d5437b!2s55%2029th%20St%20-%20Al%20Barsha%20Second%20-%20Al%20Barsha%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1772001420128!5m2!1sen!2s"
               className="w-full h-48  bg-slate-800 rounded-lg overflow-hidden relative group border border-white/10 hover:border-yellow-500/50 transition-colors"
               title="Our Store Location in Google Maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.8696529263066!2d55.39297417447848!3d25.3421546258158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b39dde3733b%3A0x70627f406a04df1e!2sRukun%20AL%20arooba%20used%20furniture%20and%20electronics%20trading!5e0!3m2!1sen!2s!4v1757767922306!5m2!1sen!2s"
               allowFullScreen
               loading="lazy"
-            />
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
 
