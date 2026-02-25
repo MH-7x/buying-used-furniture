@@ -56,7 +56,7 @@ const pages: MetadataRoute.Sitemap = [
     url: "/شراء-اثاث-مستعمل-راس-الخيمة",
     changeFrequency: "monthly",
     priority: 0.8,
-    images: ["/loc/شراء-اثاث-مستعمل-رأس الخيمة.jpg"],
+    images: ["/loc/شراء-اثاث-مستعمل-رأس-الخيمة.jpg"],
     lastModified: "2026-02-25",
   },
   {

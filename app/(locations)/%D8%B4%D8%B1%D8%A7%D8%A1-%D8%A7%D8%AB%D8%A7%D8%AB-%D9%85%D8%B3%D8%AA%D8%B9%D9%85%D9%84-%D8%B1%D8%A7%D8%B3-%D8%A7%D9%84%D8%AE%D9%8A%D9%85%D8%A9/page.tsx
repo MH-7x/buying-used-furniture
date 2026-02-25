@@ -7,7 +7,7 @@ import { RAKFaqs } from "@/lib/faqsList";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import { LocationLinks } from "@/lib/Lists";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import imgSrc from "@/public/loc/شراء-اثاث-مستعمل-رأس الخيمة.jpg";
+import imgSrc from "@/public/loc/شراء-اثاث-مستعمل-رأس-الخيمة.jpg";
 import { CheckIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +20,7 @@ export const metadata = MetadataTemplate({
       desc: "شراء اثاث مستعمل رأس الخيمة بأعلى الأسعار. تقييم مجاني، دفع نقدي فوري، واستلام مجاني من الحمراء والمرجان وجميع مناطق رأس الخيمة. تواصل عبر واتساب الآن!",
     },
     image: {
-      path: "/loc/شراء-اثاث-مستعمل-رأس الخيمة.jpg",
+      path: "/loc/شراء-اثاث-مستعمل-رأس-الخيمة.jpg",
       alt: "شراء اثاث مستعمل رأس الخيمة ",
     },
     path: "/شراء-اثاث-مستعمل-راس-الخيمة",
