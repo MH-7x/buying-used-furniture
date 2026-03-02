@@ -36,7 +36,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.8,
     images: ["/loc/شراء-اثاث-مستعمل-الشارقة.jpg"],
-    lastModified: "2026-02-25",
+    lastModified: "2026-03-02",
   },
   {
     url: "/شراء-اثاث-مستعمل-العين",
