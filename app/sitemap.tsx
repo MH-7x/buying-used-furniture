@@ -29,7 +29,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.8,
     images: ["/loc/شراء-اثاث-مستعمل-ابوظبي.jpg"],
-    lastModified: "2026-02-25",
+    lastModified: "2026-03-03",
   },
   {
     url: "/شراء-اثاث-مستعمل-الشارقة",

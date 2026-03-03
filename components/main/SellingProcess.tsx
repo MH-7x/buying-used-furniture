@@ -240,7 +240,7 @@ const SellProcessSection = ({
             </h3>
             <p className="mb-8 text-white/80 max-w-xl">
               لا تضيع وقتك في المساومات العشوائية. تواصل معنا الآن واحصل على
-              أفضل عرض سعر في السوق.
+              أفضل سعر اثاث المستعمل في السوق.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
