@@ -23,7 +23,7 @@ const pages: MetadataRoute.Sitemap = [
     images: ["/شراء-الاثاث-المستعمل.jpg"],
     lastModified: "2026-02-25",
   },
-  // LOCATION-BASED-PAGES
+  // LOCATION-BASED-PAGES Here
   {
     url: "/شراء-اثاث-مستعمل-ابوظبي",
     changeFrequency: "monthly",
@@ -50,7 +50,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.8,
     images: ["/loc/شراء-اثاث-مستعمل-دبي.jpg"],
-    lastModified: "2026-02-25",
+    lastModified: "2026-03-04",
   },
   {
     url: "/شراء-اثاث-مستعمل-راس-الخيمة",
@@ -66,7 +66,7 @@ const pages: MetadataRoute.Sitemap = [
     images: ["/loc/شراء-اثاث-مستعمل-عجمان.jpg"],
     lastModified: "2026-02-25",
   },
-  // SERVICES PAGES
+  // SERVICES PAGES Here
   {
     url: "/شراء-اثاث-فنادق-مستعمل",
     changeFrequency: "monthly",
