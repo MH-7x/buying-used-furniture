@@ -7,7 +7,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "weekly",
     priority: 1.0,
     images: ["/شراء-الاثاث-المستعمل.jpg"],
-    lastModified: "2026-02-25",
+    lastModified: "2026-03-05",
   },
   {
     url: "/عن-الشركة",
