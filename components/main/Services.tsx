@@ -84,7 +84,7 @@ const Services = () => {
                 <p className="text-muted-foreground">{feature.details}</p>
                 <Button asChild className="mt-6 gap-3 rounded-full" size="lg">
                   <Link href={feature.tutorialLink}>
-                    اتصل بنال {feature.title.substring(0, 20)} ...
+                    اتصل بنا {feature.title.substring(0, 20)} ...
                     <ArrowLeft />
                   </Link>
                 </Button>
@@ -118,7 +118,7 @@ const Services = () => {
                 </p>
                 <Button asChild className="mt-4  mx-auto">
                   <Link href={feature.tutorialLink}>
-                    اتصل بنال {feature.title.substring(0, 20)} ...
+                    اتصل بنا {feature.title.substring(0, 20)} ...
                   </Link>
                 </Button>
               </div>

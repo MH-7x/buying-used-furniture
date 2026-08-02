@@ -2,21 +2,18 @@ import { App } from "./App";
 import type { Metadata } from "next";
 
 export interface Data {
-  meta : {
-    title : string;
-    desc : string;
-  },
-  path : string;
-  image : {
-    path : string,
-    alt : string
-  }
+  meta: {
+    title: string;
+    desc: string;
+  };
+  path: string;
+  image: {
+    path: string;
+    alt: string;
+  };
 }
 
-export default  function MetadataTemplate({data}: {
-  data : Data;
-}):Metadata {
-
+export default function MetadataTemplate({ data }: { data: Data }): Metadata {
   return {
     title: data.meta.title,
     description: data.meta.desc,
@@ -26,11 +23,12 @@ export default  function MetadataTemplate({data}: {
     openGraph: {
       url: `${App.url}${data.path}`,
       title: data.meta.title,
-      images: [{url : `${App.url}${data.image.path}`, alt : data.image.alt}],
+      images: [{ url: `${App.url}${data.image.path}`, alt: data.image.alt }],
       description: data.meta.desc,
       type: "website",
-      countryName: "United Arab Emairtes",
-      emails: ["buying.used.furniture@gmail.com"],
+      countryName: "United Arab Emirates",
+      emails: ["buying.used.furniture.uae@gmail.com"],
+
       phoneNumbers: [App.phone],
       siteName: App.name,
     },
