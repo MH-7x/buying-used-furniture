@@ -7,6 +7,7 @@ import FooterNew from "@/components/FooterNew";
 import { App } from "@/lib/App";
 import { Toaster } from "@/components/ui/sonner";
 import GTM from "@/components/GTM";
+import { generateLocalBusinessSchema } from "@/lib/GenerateLocalBusinessSchema";
 
 const rubik = Rubik({
   subsets: ["arabic"],
@@ -50,6 +51,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar-AE">
+      <head>
+        <script
+          id="business-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: generateLocalBusinessSchema() }}
+        />
+      </head>
       <body
         dir="rtl"
         className={`${rubik.className} antialiased max-w-350 mx-auto bg-primary/10`}

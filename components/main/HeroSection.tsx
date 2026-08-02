@@ -13,12 +13,12 @@ const HeroSection = () => {
       <div className="mx-auto grid w-full max-w-(--breakpoint-xl) gap-12 px-4 py-12 lg:grid-cols-2 lg:py-0">
         <div className="my-auto">
           <h1 className="mt-6 font-semibold text-4xl leading-[1.2]! tracking-[-0.035em] md:text-5xl ">
-            شركة شراء أثاث مستعمل في الإمارات - بيع وشراء أثاث
+            شركة شراء اثاث مستعمل في الإمارات - بيع وشراء اثاث
           </h1>
           <p className="mt-6 max-w-[60ch] text-foreground/80 text-lg">
             هل تبحث عن شركة موثوقة في شراء اثاث مستعمل في الإمارات العربية
             المتحدة؟ نحن نقدم في شركة شراء اثاث مستعمل خدمة شراء{" "}
-            <Link href={"/شراء-الأثاث-المنزلي"}>جميع أنواع الأثاث المنزلي</Link>{" "}
+            <Link href={"/شراء-الأثاث-المنزلي"}>جميع أنواع اثاث المنزلي</Link>{" "}
             <Link href={"/شراء-الاثاث-المكتبي-المستعمل"}>والمكتبي</Link>{" "}
             <Link href={"/شراء-الالكترونيات-المستعملة"}>
               والأجهزة الكهربائية
@@ -36,7 +36,7 @@ const HeroSection = () => {
           </p>
           <div className="mt-12 flex items-center gap-4">
             <Button whatsapp className="rounded-full text-base" size="lg">
-              أرسل صور أثاثك على واتساب لتقييم{" "}
+              أرسل صور اثاثك على واتساب لتقييم{" "}
               <ArrowUpRight className="h-5! w-5!" />
             </Button>
           </div>

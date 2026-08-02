@@ -36,9 +36,9 @@ const FurniturePriceGuide = () => {
             كم يساوي اثاثك؟
           </h3>
           <p className="mt-5 md:text-lg text-muted-foreground">
-            من أكثر الأسئلة اللي يسألها الناس: كم يساوي أثاثي المستعمل؟ الجواب
+            من أكثر الأسئلة اللي يسألها الناس: كم يساوي اثاثي المستعمل؟ الجواب
             يعتمد على عوامل كثيرة مثل الماركة والحالة وعمر القطعة والطلب في
-            السوق. لكن كقاعدة عامة، الأثاث المستعمل بحالة جيدة يُقيّم عادةً
+            السوق. لكن كقاعدة عامة، اثاث المستعمل بحالة جيدة يُقيّم عادةً
             بحوالي 30% إلى 60% من سعره الأصلي.
           </p>
         </div>
@@ -74,7 +74,7 @@ const FurniturePriceGuide = () => {
                       scope="col"
                       className="px-6 py-4 text-right text-sm font-bold uppercase tracking-wider"
                     >
-                      نوع الأثاث
+                      نوع اثاث
                     </th>
                     <th
                       scope="col"
@@ -241,7 +241,7 @@ const FurniturePriceGuide = () => {
               <span className="block">نقدر نقول لك بصراحة:</span>
             </h2>
             <p className="mt-4 md:text-lg text-gray-300 max-w-3xl">
-              لو أثاثك من ماركة معروفة وبحالة ممتازة ومع أوراقه الأصلية، راح
+              لو اثاثك من ماركة معروفة وبحالة ممتازة ومع أوراقه الأصلية، راح
               تحصل على أفضل سعر ممكن. أما لو القطعة قديمة ومتضررة، السعر بيكون
               أقل – لكن في كل الأحوال نعطيك عرض عادل ومبني على أسس واضحة.
             </p>
@@ -256,7 +256,7 @@ const FurniturePriceGuide = () => {
               variant={"ghost"}
               className="text-primary hover:text-secondary underline underline-offset-4 "
             >
-              احسب قيمة أثاثك
+              احسب قيمة اثاثك
             </Button>
           </div>
         </div>

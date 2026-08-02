@@ -2,7 +2,7 @@ const Content = () => {
   return (
     <section className="max-w-4xl mt-36 mx-auto md:px-0 px-4">
       <h2 className="md:text-4xl text-3xl text-secondary font-bold">
-        ليش تشتري أثاث مستعمل؟
+        ليش تشتري اثاث مستعمل؟
       </h2>
       <div className="grid md:grid-cols-2 gird-cols-1 gap-10 md:mt-16 mt-10">
         <div>
@@ -21,7 +21,7 @@ const Content = () => {
             <li>انتقال لبيت ثاني</li>
           </ul>
           <p className="text-muted-foreground mt-5">
-            تشتري أثاث جديد كل مرة؟ ما ينفع. بيع وشراء اثاث مستعمل أسهل وأوفر.
+            تشتري اثاث جديد كل مرة؟ ما ينفع. بيع وشراء اثاث مستعمل أسهل وأوفر.
           </p>
         </div>
         <div>
@@ -44,7 +44,7 @@ const Content = () => {
           </h3>
 
           <p className="text-muted-foreground mt-5">
-            إعادة استخدام الأثاث أفضل من رميه. يدعم الاستدامة ويقلل الهدر.
+            إعادة استخدام اثاث أفضل من رميه. يدعم الاستدامة ويقلل الهدر.
           </p>
         </div>
       </div>

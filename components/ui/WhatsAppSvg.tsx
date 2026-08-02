@@ -1,7 +1,9 @@
-const WhatsAppSvg = ({ fill }: { fill: string }) => {
+const WhatsAppSvg = ({ fill, size }: { fill: string; size?: number }) => {
   return (
     <svg
       fill={fill}
+      width={size}
+      height={size}
       viewBox="0 0 32 32"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

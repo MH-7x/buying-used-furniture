@@ -26,13 +26,14 @@ import {
   Verified,
 } from "lucide-react";
 import Image from "next/image";
-import Script from "next/script";
+
 import imgSrc from "@/public/loc/شراء-اثاث-مستعمل-دبي.jpg";
+import { generateBreadcrumbSchema } from "@/lib/GenerateBreadcrumbSchema";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "شراء اثاث مستعمل دبي | أفضل الأسعار والخدمة السريعة",
-      desc: "شراء اثاث مستعمل دبي بأفضل الأسعار! نصل خلال 5-10 دقائق. نشتري جميع أنواع الأثاث والأجهزة المنزلية في دبي مارينا، الخليج التجاري، جميرا. تقييم احترافي وضمان. اتصل الآن!",
+      desc: "شراء اثاث مستعمل دبي بأفضل الأسعار! نصل خلال 5-10 دقائق. نشتري جميع أنواع اثاث والأجهزة المنزلية في دبي مارينا، الخليج التجاري، جميرا. تقييم احترافي وضمان. اتصل الآن!",
     },
     image: {
       path: "/loc/شراء-اثاث-مستعمل-دبي.jpg",
@@ -42,21 +43,29 @@ export const metadata = MetadataTemplate({
   },
 });
 
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "شراء اثاث مستعمل دبي", path: "/شراء-اثاث-مستعمل-دبي" },
+]);
+
 const FaqsSchema = generateFAQSchema(convertFaqsForSchema(DubaiPageFaqs));
 
 const page = () => {
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
         id="FAQSchema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
+      <script
+        id="BreadcrumbSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbSchema }}
+      />
       <main className=" overflow-hidden">
         <LocHeroSection
           title=" شراء اثاث مستعمل دبي - أفضل الأسعار والخدمة السريعة"
-          desc="هل تبحث عن شراء اثاث المستعمل في دبي بسعر عادل وخدمة موثوقة؟ نحن شركة شراء اثاث مستعمل متخصصة في شراء وبيع اثاث مستعمل والأجهزة المنزلية في دبي والإمارات منذ أكثر من عشر سنوات. سواء كنت تريد اثاث مستعمل للبيع في دبي أو تبحث عن من يشتري الأثاث الخاصة بك بسعر عادل، نحن الخيار الأمثل."
+          desc="هل تبحث عن شراء اثاث المستعمل في دبي بسعر عادل وخدمة موثوقة؟ نحن شركة شراء اثاث مستعمل متخصصة في شراء وبيع اثاث مستعمل والأجهزة المنزلية في دبي والإمارات منذ أكثر من عشر سنوات. سواء كنت تريد اثاث مستعمل للبيع في دبي أو تبحث عن من يشتري اثاث الخاصة بك بسعر عادل، نحن الخيار الأمثل."
           img={{ src: imgSrc, alt: "شراء اثاث مستعمل دبي" }}
         />
         <div className="mt-16 max-w-6xl mx-auto md:px-0 px-4">
@@ -85,7 +94,7 @@ const page = () => {
               بالكامل. الفكرة بسيطة:
             </p>
             <p className="md:inline">
-              تتصل بنا، ثم نأتي لمعاينة الأثاث، ونتفق على السعر المناسب، وبعدها
+              تتصل بنا، ثم نأتي لمعاينة اثاث، ونتفق على السعر المناسب، وبعدها
               نعطيك المبلغ فوراً.
             </p>
             <p className="md:inline">
@@ -100,7 +109,7 @@ const page = () => {
               className="md:text-4xl text-3xl text-secondary font-bold leading-tight
           "
             >
-              لماذا تبيع أثاثك لنا بدلاً من دوبيزل أو الإعلانات المبوبة؟
+              لماذا تبيع اثاثك لنا بدلاً من دوبيزل أو الإعلانات المبوبة؟
             </h2>
             <p className="mt-5 text-muted-foreground">
               الكثير من الناس يجربون دوبيزل لبيع اثاث مستعمل في دبي أو مواقع
@@ -153,7 +162,7 @@ const page = () => {
           <div className="bg-muted md:h-auto h-80 rounded-3xl md:order-1 order-2 relative  overflow-hidden">
             <Image
               src={"/loc/أفضل-شركة-للأثاث-المستعمل-في-دبي.jpg"}
-              alt=" أفضل شركة للأثاث المستعمل في دبي"
+              alt=" أفضل شركة للاثاث المستعمل في دبي"
               fill
               className="object-cover"
             />
@@ -161,7 +170,7 @@ const page = () => {
         </section>
         <WhySellToUs />
         <SellProcessSection
-          title="كيفية بيع الأثاث المستعمل في دبي؟"
+          title="كيفية بيع اثاث المستعمل في دبي؟"
           description="العملية بسيطة ومباشرة.
 ما فيه تعقيدات أو إجراءات طويلة.
 "
@@ -173,7 +182,7 @@ const page = () => {
                   <p>أرسل لنا رسالة على واتساب أو اتصل على الرقم مباشرة.</p>
                   <p>نحن نرد خلال 5-10 دقائق في العادة.</p>
                   <p>
-                    لو تقدر ترسل صور للأثاث، يكون أفضل لأننا نعطيك سعراً
+                    لو تقدر ترسل صور للاثاث، يكون أفضل لأننا نعطيك سعراً
                     تقريبياً من البداية.
                   </p>
                 </>
@@ -285,7 +294,7 @@ const page = () => {
                 <li>نشتري اثاث مستعمل في دبي مارينا بشكل شبه يومي</li>
                 <li>
                   الأبراج الكثيرة والشقق المفروشة تعني أن في طلب دائم على شراء
-                  الأثاث
+                  اثاث
                 </li>
               </ul>
             </div>
@@ -299,7 +308,7 @@ const page = () => {
       mt-5 text-muted-foreground list-inside list-disc"
               >
                 <li>منطقة راقية</li>
-                <li>أثاثها عادة يكون بحالة جيدة</li>
+                <li>اثاثها عادة يكون بحالة جيدة</li>
                 <li>
                   نشتري من الأبراج السكنية والفنادق الشقق في الخليج التجاري وحول
                   برج خليفة
@@ -316,7 +325,7 @@ const page = () => {
                 className="
       mt-5 text-muted-foreground list-inside list-disc"
               >
-                <li>الفلل والشقق الفاخرة في جميرا فيها أثاث نوعية ممتازة</li>
+                <li>الفلل والشقق الفاخرة في جميرا فيها اثاث نوعية ممتازة</li>
                 <li>
                   نتعامل مع العائلات اللي تبيع محتويات فيلا كاملة أو شقة كبيرة
                 </li>
@@ -331,7 +340,7 @@ const page = () => {
                 className="
       mt-5 text-muted-foreground list-inside list-disc"
               >
-                <li>المناطق القديمة في دبي فيها سوق نشط للأثاث المستعمل</li>
+                <li>المناطق القديمة في دبي فيها سوق نشط للاثاث المستعمل</li>
                 <li>نشتري من الشقق والبيوت</li>
                 <li>نقدم نفس الخدمة السريعة</li>
               </ul>
@@ -348,7 +357,7 @@ const page = () => {
                 <li>مناطق سكنية كبيرة</li>
                 <li>فيها عائلات كثيرة</li>
                 <li>نصل للبرشاء ودبي لاند بسرعة</li>
-                <li>نتعامل مع بيع الأثاث بكميات كبيرة أو صغيرة</li>
+                <li>نتعامل مع بيع اثاث بكميات كبيرة أو صغيرة</li>
               </ul>
             </div>
             <div>
@@ -360,7 +369,7 @@ const page = () => {
                 className="
       mt-5 text-muted-foreground list-inside list-disc"
               >
-                <li>الفلل في هذه المناطق عادة فيها أثاث فاخر</li>
+                <li>الفلل في هذه المناطق عادة فيها اثاث فاخر</li>
                 <li>نشتري من المجمعات السكنية الراقية</li>
                 <li>نعطي تقييماً عادلاً للقطع النوعية</li>
               </ul>
@@ -371,7 +380,7 @@ const page = () => {
         <section className="flex mt-32 items-center justify-center">
           <div className="w-full max-w-6xl md:px-6 px-3 py-10">
             <h2 className="font-bold md:text-4xl text-3xl  sm:max-w-xl md:text-[2.5rem] md:leading-[1.2]">
-              لماذا نختلف عن مشتري الأثاث الآخرين؟
+              لماذا نختلف عن مشتري اثاث الآخرين؟
             </h2>
             <p className="mt-5 text-lg text-muted-foreground sm:text-xl">
               سوق شراء اثاث مستعمل في دبي فيه كثير من الناس - أفراد، شركات
@@ -390,7 +399,7 @@ const page = () => {
                 },
                 {
                   title: "الخبرة",
-                  desc: "أكثر من عشر سنوات في هذا المجال. نعرف قيمة الأثاث الحقيقية ومتطلبات السوق.",
+                  desc: "أكثر من عشر سنوات في هذا المجال. نعرف قيمة اثاث الحقيقية ومتطلبات السوق.",
                   icon: (
                     <>
                       <Medal className="text-secondary" />
@@ -454,10 +463,10 @@ const page = () => {
         </section>
         <section className="max-w-4xl mt-36 mx-auto md:px-0 px-4">
           <h2 className="md:text-4xl text-3xl text-secondary font-bold">
-            متى تبيع أثاثك؟
+            متى تبيع اثاثك؟
           </h2>
           <p className="text-muted-foreground mt-5">
-            في عدة مواقف يحتاج فيها الناس يبيعون أثاثهم:
+            في عدة مواقف يحتاج فيها الناس يبيعون اثاثهم:
           </p>
           <div className="grid md:grid-cols-2 gird-cols-1 gap-10 md:mt-16 mt-10">
             <div>
@@ -466,18 +475,18 @@ const page = () => {
               </p>
 
               <p className="text-muted-foreground mt-5">
-                : كثير من الوافدين في الإمارات يقررون يسافرون بعد فترة. شحن
-                الأثاث مكلف، فالبيع يكون الخيار الأفضل.
+                : كثير من الوافدين في الإمارات يقررون يسافرون بعد فترة. شحن اثاث
+                مكلف، فالبيع يكون الخيار الأفضل.
               </p>
             </div>
 
             <div>
               <p className="text-xl text-secondary  font-semibold">
-                تغيير الأثاث
+                تغيير اثاث
               </p>
 
               <p className="text-muted-foreground mt-5">
-                بعد كم سنة، تحب تغير ديكور البيت. بدل ما تترك الأثاث القديم في
+                بعد كم سنة، تحب تغير ديكور البيت. بدل ما تترك اثاث القديم في
                 المخزن، تبيعه وتستفيد من المبلغ.
               </p>
             </div>
@@ -488,7 +497,7 @@ const page = () => {
               </p>
 
               <p className="text-muted-foreground mt-5">
-                : لما تنتقل من فيلا لشقة مثلاً، ما تقدر تاخذ كل الأثاث معك.
+                : لما تنتقل من فيلا لشقة مثلاً، ما تقدر تاخذ كل اثاث معك.
               </p>
             </div>
 
@@ -498,7 +507,7 @@ const page = () => {
               </p>
 
               <p className="text-muted-foreground mt-5">
-                الشركات اللي تقفل أو تنقل مقرها تحتاج تتخلص من الأثاث المكتبي.
+                الشركات اللي تقفل أو تنقل مقرها تحتاج تتخلص من اثاث المكتبي.
               </p>
             </div>
 
@@ -508,7 +517,7 @@ const page = () => {
               </p>
 
               <p className="text-muted-foreground mt-5">
-                : للأسف، هذه مواقف تحصل. يحتاج الأطراف يبيعون الأثاث المشترك
+                : للأسف، هذه مواقف تحصل. يحتاج الأطراف يبيعون اثاث المشترك
                 ويقسمون المبلغ.
               </p>
             </div>
@@ -519,8 +528,8 @@ const page = () => {
               </p>
 
               <p className="text-muted-foreground mt-5">
-                أحياناً تحتاج مبلغاً سريعاً، والأثاث موجود وممكن تحوله لنقد في
-                نفس اليوم.
+                أحياناً تحتاج مبلغاً سريعاً، واثاث موجود وممكن تحوله لنقد في نفس
+                اليوم.
               </p>
             </div>
             <p className="text-muted-foreground mt-5">
@@ -531,13 +540,13 @@ const page = () => {
         <SellingTips />
         <section className="max-w-4xl mt-36 mx-auto md:px-0 px-4">
           <h2 className="md:text-4xl text-3xl text-secondary font-bold">
-            ماذا نفعل بالأثاث بعد الشراء؟
+            ماذا نفعل باثاث بعد الشراء؟
           </h2>
           <p className="text-muted-foreground mt-5">
-            كثير من الناس يسألون: وش تسوون بالأثاث بعد ما تشترونه؟
+            كثير من الناس يسألون: وش تسوون باثاث بعد ما تشترونه؟
           </p>
           <p className="text-muted-foreground mt-2">
-            نحن ما نشتري الأثاث فقط عشان نبيعه بنفس الحالة. كل قطعة تمر بعملية
+            نحن ما نشتري اثاث فقط عشان نبيعه بنفس الحالة. كل قطعة تمر بعملية
             تجهيز:
           </p>
           <div className="grid md:grid-cols-2 gird-cols-1 gap-10 md:mt-16 mt-10">
@@ -585,15 +594,15 @@ const page = () => {
               ونعطي ضماناً على القطع للمشتري الجديد.
             </p>
             <p className="text-muted-foreground mt-5">
-              هذا يعني أن الأثاث اللي تبيعه لنا ما راح ينتهي في مكان عشوائي. راح
+              هذا يعني أن اثاث اللي تبيعه لنا ما راح ينتهي في مكان عشوائي. راح
               يستفيد منه شخص آخر، وهذا شيء جيد للبيئة وللمجتمع
             </p>
           </div>
         </section>
         <FAQSection faqs={DubaiPageFaqs} />
         <CTA
-          title="تواصل معنا لبيع أثاثك المستعمل في دبي"
-          desc="بيع الأثاث المستعمل ما لازم يكون معقداً أو مرهقاً.
+          title="تواصل معنا لبيع اثاثك المستعمل في دبي"
+          desc="بيع اثاث المستعمل ما لازم يكون معقداً أو مرهقاً.
 مع خدمة شراء اثاث مستعمل دبي اللي نقدمها، العملية بسيطة ومباشرة:
 "
         />

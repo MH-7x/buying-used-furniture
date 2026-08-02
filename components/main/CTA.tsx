@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
@@ -27,13 +26,13 @@ const CTA = ({ title, desc }: { title?: string; desc?: string }) => {
                   <h2 className="text-xl leading-tight font-semibold lg:text-2xl text-secondary">
                     {title
                       ? title
-                      : "جاهز لبيع أثاثك المستعمل؟ تواصل معنا الآن"}
+                      : "جاهز لبيع اثاثك المستعمل؟ تواصل معنا الآن"}
                   </h2>
                   <div>
                     <p className="text-muted-foreground mb-3 text-base">
                       {desc
                         ? desc
-                        : "  سواء كنت تريد بيع أثاثك أو شراء أثاث مستعمل بحالة ممتازة — نحن هنا لخدمتك في أي إمارة. أرسل لنا صوراً على الواتساب أو اتصل بنا اليوم واحصل على تقييم مجاني خلال دقائق."}
+                        : "  سواء كنت تريد بيع اثاثك أو شراء اثاث مستعمل بحالة ممتازة — نحن هنا لخدمتك في أي إمارة. أرسل لنا صوراً على الواتساب أو اتصل بنا اليوم واحصل على تقييم مجاني خلال دقائق."}
                     </p>
                     <div className="mt-5 flex gap-x-3">
                       <Button whatsapp>واتساب لنا</Button>

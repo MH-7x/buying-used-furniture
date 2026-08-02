@@ -16,11 +16,11 @@ const PriceDeterminationAbuDhabi = () => {
         <div className="py-12 px-6 md:px-12">
           <div>
             <h3 className="md:text-4xl text-3xl font-bold text-secondary mb-4">
-              أسعار الاثاث المستعمل في الشارقة - كيف نقيّم أثاثك؟
+              أسعار الاثاث المستعمل في الشارقة - كيف نقيّم اثاثك؟
             </h3>
 
             <p className="text-slate-600 mb-6 leading-relaxed">
-              من أكثر الأسئلة اللي توصلنا: كم سعر أثاثي المستعمل؟ الجواب يعتمد
+              من أكثر الأسئلة اللي توصلنا: كم سعر اثاثي المستعمل؟ الجواب يعتمد
               على عدة عوامل، ونحن نشرحها لك بكل شفافية:
             </p>
 
@@ -35,7 +35,7 @@ const PriceDeterminationAbuDhabi = () => {
                     العلامة التجارية
                   </h4>
                   <p className="text-slate-600 text-sm leading-relaxed">
-                    أثاث IKEA مثلاً يختلف سعره عن أثاث Home Centre أو Royal
+                    اثاث IKEA مثلاً يختلف سعره عن اثاث Home Centre أو Royal
                     Furniture. الماركات المعروفة بجودتها تحتفظ بقيمة أعلى في
                     السوق.
                   </p>
@@ -48,9 +48,9 @@ const PriceDeterminationAbuDhabi = () => {
                   <Clock className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-800 mb-1">عمر الأثاث</h4>
+                  <h4 className="font-bold text-slate-800 mb-1">عمر اثاث</h4>
                   <p className="text-slate-600 text-sm leading-relaxed">
-                    طبيعي، كل ما كان الأثاث أحدث كل ما كان سعره أعلى. لكن بعض
+                    طبيعي، كل ما كان اثاث أحدث كل ما كان سعره أعلى. لكن بعض
                     القطع الكلاسيكية ممكن تحتفظ بقيمتها لفترة طويلة لو كانت
                     بحالة ممتازة.
                   </p>
@@ -68,7 +68,7 @@ const PriceDeterminationAbuDhabi = () => {
                   </h4>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     هل في خدوش؟ كسور؟ بقع؟ كل ما كانت القطعة نظيفة وسليمة، كل ما
-                    ارتفع سعرها. ونصيحة: نظف أثاثك وأصلح الأشياء البسيطة قبل ما
+                    ارتفع سعرها. ونصيحة: نظف اثاثك وأصلح الأشياء البسيطة قبل ما
                     تتواصل معنا — هذا ممكن يرفع السعر بشكل ملحوظ.
                   </p>
                 </div>

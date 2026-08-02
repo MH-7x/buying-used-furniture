@@ -4,6 +4,7 @@ import ServiceSidebar from "@/components/main/ServiceSidebar";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import imagSrc from "@/public/ser/شراء-الأجهزة-المنزلية-المستعملة.jpg";
 import Image from "next/image";
+import { generateBreadcrumbSchema } from "@/lib/GenerateBreadcrumbSchema";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -18,9 +19,18 @@ export const metadata = MetadataTemplate({
     path: "/شراء-الأجهزة-المنزلية",
   },
 });
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "شراء الأجهزة المنزلية", path: "/شراء-الأجهزة-المنزلية" },
+]);
+
 const BuyingAppliances = () => {
   return (
     <main className="overflow-hidden">
+      <script
+        id="BreadcrumbSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbSchema }}
+      />
       <ServiceHero
         title={
           <>
@@ -59,8 +69,8 @@ const BuyingAppliances = () => {
             </p>
             <p>
               نحن موجودين في الشارقة ونخدم دبي وأبوظبي وعجمان ورأس الخيمة وكل
-              الإمارات. عندنا خبرة أكثر من عشر سنوات في شراء وبيع الأثاث
-              والأجهزة المستعملة.
+              الإمارات. عندنا خبرة أكثر من عشر سنوات في شراء وبيع اثاث والأجهزة
+              المستعملة.
             </p>
           </section>
           <section>
@@ -288,9 +298,9 @@ const BuyingAppliances = () => {
           <section>
             <h2>لماذا شركة شراء اثاث مستعمل هي خيارك الأفضل؟</h2>
             <p>
-              خلال أكثر من عشر سنوات في هذا المجال، بنينا سمعة قوية في سوق
-              الأثاث والأجهزة المستعملة في الإمارات. وهذي أهم الأسباب اللي
-              تخلينا مختلفين:
+              خلال أكثر من عشر سنوات في هذا المجال، بنينا سمعة قوية في سوق اثاث
+              والأجهزة المستعملة في الإمارات. وهذي أهم الأسباب اللي تخلينا
+              مختلفين:
             </p>
             <ul>
               <li>

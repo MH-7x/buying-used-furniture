@@ -14,7 +14,7 @@ const FurnitureBuyingSection = () => {
   const sections = [
     {
       id: 1,
-      title: "أثاث غرف النوم",
+      title: "اثاث غرف النوم",
       icon: <BedDouble className="w-6 h-6" />,
       href: "/شراء-الأثاث-المنزلي",
       image: "/loc/أثاث-غرف-النوم.jpg",
@@ -66,7 +66,7 @@ const FurnitureBuyingSection = () => {
     },
     {
       id: 5,
-      title: "الأثاث المكتبي",
+      title: "اثاث المكتبي",
       description: "نشتري اثاث مكتبي مستعمل في دبي للشركات والمؤسسات.",
       icon: <Briefcase className="w-6 h-6" />,
       href: "/شراء-الاثاث-المكتبي-المستعمل",
@@ -78,7 +78,7 @@ const FurnitureBuyingSection = () => {
         "الخزائن",
         "طاولات الاجتماعات",
       ],
-      highlight: "لو عندك كمية كبيرة من الأثاث المكتبي، نعطيك سعراً خاصاً.",
+      highlight: "لو عندك كمية كبيرة من اثاث المكتبي، نعطيك سعراً خاصاً.",
     },
     {
       id: 3,
@@ -102,12 +102,12 @@ const FurnitureBuyingSection = () => {
         {/* Header Section */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
-            أنواع الأثاث الذي نشتريه في دبي
+            أنواع اثاث الذي نشتريه في دبي
           </h2>
 
           <p className="text-lg text-slate-600 leading-relaxed">
-            نشتري معظم أنواع الأثاث المستعمل المنزلي والمكتبي. سواء كنت تبحث عن
-            من يشتري اثاث مستعمل في الإمارات أو تحديداً في دبي، نحن نغطي كل
+            نشتري معظم أنواع اثاث المستعمل المنزلي والمكتبي. سواء كنت تبحث عن من
+            يشتري اثاث مستعمل في الإمارات أو تحديداً في دبي، نحن نغطي كل
             الأنواع. الشرط الأساسي أن القطعة تكون في حالة معقولة يمكن إعادة
             بيعها.
           </p>

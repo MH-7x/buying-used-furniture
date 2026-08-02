@@ -15,12 +15,12 @@ export default function FAQSection({
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-secondary sm:text-4xl leading-tight">
-            {title ? title : "الأسئلة الشائعة حول شراء الأثاث المستعمل"}
+            {title ? title : "الأسئلة الشائعة حول شراء اثاث المستعمل"}
           </h2>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
             {desc
               ? desc
-              : " فيما يلي بعض الأسئلة والأجوبة الشائعة من العملاء عند شراء الأثاث          المستعمل."}
+              : " فيما يلي بعض الأسئلة والأجوبة الشائعة من العملاء عند شراء اثاث          المستعمل."}
           </p>
         </div>
 

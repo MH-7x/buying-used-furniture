@@ -54,7 +54,7 @@ const Navbar = () => {
         <Link href={"/"} className="w-[85px] h-[65px]  relative">
           <Image
             src={"/logo.svg"}
-            alt="شعار شركة تشتري الأثاث المستعمل"
+            alt="شعار شركة تشتري اثاث المستعمل"
             fill
             className="absolute object-contain"
           />

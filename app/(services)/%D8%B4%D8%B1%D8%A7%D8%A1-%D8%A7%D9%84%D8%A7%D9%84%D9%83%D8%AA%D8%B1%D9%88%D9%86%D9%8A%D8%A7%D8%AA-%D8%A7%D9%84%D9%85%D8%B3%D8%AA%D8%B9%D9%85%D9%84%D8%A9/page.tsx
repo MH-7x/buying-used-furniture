@@ -4,6 +4,7 @@ import ServiceSidebar from "@/components/main/ServiceSidebar";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import imgSrc from "@/public/ser/شراء-الالكترونيات-المستعملة.jpg";
 import Image from "next/image";
+import { generateBreadcrumbSchema } from "@/lib/GenerateBreadcrumbSchema";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -20,9 +21,18 @@ export const metadata = MetadataTemplate({
   },
 });
 
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "شراء الالكترونيات المستعملة", path: "/شراء-الالكترونيات-المستعملة" },
+]);
+
 const BuyingElectronicsPage = () => {
   return (
     <main className="overflow-hidden">
+      <script
+        id="BreadcrumbSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbSchema }}
+      />
       <ServiceHero
         title={
           <>
@@ -216,7 +226,7 @@ const BuyingElectronicsPage = () => {
           <section>
             <h2>ليش الناس تختار شركة شراء اثاث مستعمل؟</h2>
             <p>
-              أكثر من 10 سنوات خبرة في سوق الأثاث والإلكترونيات المستعملة في
+              أكثر من 10 سنوات خبرة في سوق اثاث والإلكترونيات المستعملة في
               الإمارات. تقييم عادل وشفاف لأجهزتك بناءً على قيمتها الحقيقية في
               السوق. رد سريع خلال دقائق على الواتساب. دفع فوري نقداً أو تحويل
               بنكي. نقل مجاني من بيتك بفريق متخصص. نشتري جميع الماركات المعروفة.
@@ -266,7 +276,7 @@ const BuyingElectronicsPage = () => {
       <CTA
         title="تواصل معنا الحين"
         desc="لو عندك أجهزة إلكترونية مستعملة وتبي تبيعها بسعر عادل وبدون تعب، تواصل معنا الحين على الواتساب أو عن طريق موقعنا الإلكتروني. نرد عليك بسرعة، ونجي لعندك في أقرب وقت.
-سواء كنت تنتقل من بيت لبيت، أو تجدد أثاث بيتك، أو عندك أجهزة زايدة ما تحتاجها – نحن هنا عشان نسهل عليك العملية ونعطيك أفضل قيمة لأجهزتك.
+سواء كنت تنتقل من بيت لبيت، أو تجدد اثاث بيتك، أو عندك أجهزة زايدة ما تحتاجها – نحن هنا عشان نسهل عليك العملية ونعطيك أفضل قيمة لأجهزتك.
 "
       />
     </main>

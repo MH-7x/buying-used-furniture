@@ -4,20 +4,25 @@ import Locations from "@/components/main/Locations";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { MailIcon, MapPinIcon, MessageCircle, PhoneIcon } from "lucide-react";
 import Link from "next/link";
+import { generateBreadcrumbSchema } from "@/lib/GenerateBreadcrumbSchema";
 
 export const metadata = MetadataTemplate({
   data: {
     meta: {
-      title: "اتصل بنا - شراء وبيع الأثاث المستعمل في الإمارات",
-      desc: "شركة رائدة في شراء اثاث مستعمل في دبي، الشارقة، وأبوظبي. نشتري الأثاث المنزلي والمكتبي والأجهزة الكهربائية. تقييم عادل، تعقيم شامل، ونقل مجاني. تواصل معنا الآن",
+      title: "اتصل بنا - شراء وبيع اثاث المستعمل في الإمارات",
+      desc: "شركة رائدة في شراء اثاث مستعمل في دبي، الشارقة، وأبوظبي. نشتري اثاث المنزلي والمكتبي والأجهزة الكهربائية. تقييم عادل، تعقيم شامل، ونقل مجاني. تواصل معنا الآن",
     },
     image: {
       path: "/شراء-الاثاث-المستعمل.jpg",
-      alt: "اتصل بنا - شراء وبيع الأثاث المستعمل في الإمارات",
+      alt: "اتصل بنا - شراء وبيع اثاث المستعمل في الإمارات",
     },
     path: "/اتصل-بنا",
   },
 });
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "اتصل بنا", path: "/اتصل-بنا" },
+]);
 
 const Contact = () => (
   <>
@@ -27,11 +32,11 @@ const Contact = () => (
           اتصل بنا
         </b>
         <h1 className="mt-3 font-semibold text-3xl tracking-tight md:text-4xl text-secondary">
-          تواصل معنا لشراء وبيع الأثاث المستعمل في الإمارات
+          تواصل معنا لشراء وبيع اثاث المستعمل في الإمارات
         </h1>
         <p className="mt-5 text-base text-muted-foreground sm:text-lg max-w-3xl">
           تواصل مع <Link href="/">شركة شراء اثاث مستعمل</Link> للحصول على تقييم
-          عادل واحترافي لأثاثك مع استجابة سريعة ومضمونة خلال 10 دقائق فقط. بفضل
+          عادل واحترافي لاثاثك مع استجابة سريعة ومضمونة خلال 10 دقائق فقط. بفضل
           خبرتنا التي تزيد عن عقد في كافة أنحاء الإمارات، نضمن لك تجربة
           &quot;شراء-بيع-نقل&quot; سلسة وموثوقة يمكنك الاعتماد عليها تماماً.
         </p>

@@ -68,7 +68,7 @@ export default function PricingRange() {
     },
     {
       id: 7,
-      item: "أثاث مكتبي (مكتب + كرسي)",
+      item: "اثاث مكتبي (مكتب + كرسي)",
       price: "150 - 1,200",
       notes: "حسب الجودة والماركة",
       icon: Briefcase,
@@ -136,7 +136,7 @@ export default function PricingRange() {
                     }}
                   >
                     <th className="py-5 px-6 font-bold text-lg whitespace-nowrap">
-                      نوع الأثاث
+                      نوع اثاث
                     </th>
                     <th className="py-5 px-6 font-bold text-lg whitespace-nowrap">
                       نطاق السعر (درهم)
@@ -215,7 +215,7 @@ export default function PricingRange() {
                   className="block mt-1 font-normal"
                   style={{ color: colors.text }}
                 >
-                  للحصول على تقييم دقيق لأثاثك، تواصل معنا مباشرة وأرسل الصور.
+                  للحصول على تقييم دقيق لاثاثك، تواصل معنا مباشرة وأرسل الصور.
                 </span>
               </p>
             </div>
@@ -248,7 +248,7 @@ export default function PricingRange() {
                 طرق الدفع المتاحة
               </h2>
               <p className="text-lg" style={{ color: colors.text }}>
-                نوفر مرونة في الدفع تناسب الجميع في شراء الأثاث المستعمل.
+                نوفر مرونة في الدفع تناسب الجميع في شراء اثاث المستعمل.
               </p>
             </div>
 

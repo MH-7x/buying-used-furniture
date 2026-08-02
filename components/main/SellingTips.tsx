@@ -16,7 +16,7 @@ export const SellingTips = () => {
       id: 1,
       title: "نظّف القطع",
       content:
-        "الأثاث النظيف سعره أفضل. لو تقدر تنظف القطع قبل المعاينة، راح يساعد في التقييم.",
+        "اثاث النظيف سعره أفضل. لو تقدر تنظف القطع قبل المعاينة، راح يساعد في التقييم.",
       icon: <Sparkles className="w-6 h-6 text-secondary" />,
     },
     {
@@ -29,14 +29,14 @@ export const SellingTips = () => {
     {
       id: 3,
       title: "اذكر الماركة",
-      content: "لو تعرف ماركة الأثاث، أخبرنا. الماركات المعروفة سعرها أفضل.",
+      content: "لو تعرف ماركة اثاث، أخبرنا. الماركات المعروفة سعرها أفضل.",
       icon: <Tag className="w-6 h-6 text-secondary" />,
     },
     {
       id: 4,
       title: "كن واقعياً",
       content:
-        "الأثاث المستعمل ما يباع بنفس سعر الجديد. تذكر أن السعر راح يكون نسبة من السعر الأصلي حسب الحالة والعمر.",
+        "اثاث المستعمل ما يباع بنفس سعر الجديد. تذكر أن السعر راح يكون نسبة من السعر الأصلي حسب الحالة والعمر.",
       icon: <Scale className="w-6 h-6 text-secondary" />,
     },
     {
@@ -58,11 +58,11 @@ export const SellingTips = () => {
             <span>دليل شركة شراء اثاث مستعمل</span>
           </div>
           <h2 className="md:text-4xl text-3xl font-bold text-secondary leading-tight mb-6">
-            نصائح ذهبية قبل بيع أثاثك
+            نصائح ذهبية قبل بيع اثاثك
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             لأننا نهتم بحصولك على أفضل قيمة، جمعنا لك هذه الخطوات البسيطة لتجهيز
-            أثاثك للبيع بأفضل سعر ممكن.
+            اثاثك للبيع بأفضل سعر ممكن.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export const SellingTips = () => {
               {/* Floating Badge on Image */}
               <div className="absolute bottom-6 right-6 left-6 bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-lg ">
                 <p className="font-bold text-secondary text-lg">
-                  نشتري جميع أنواع الأثاث
+                  نشتري جميع أنواع اثاث
                 </p>
                 <p className="text-muted-foreground text-sm mt-1">
                   خدمة سريعة وموثوقة في الشارقة والإمارات

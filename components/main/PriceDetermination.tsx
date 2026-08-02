@@ -17,7 +17,7 @@ const PriceDetermination = () => {
         <div className="py-12 px-4 p-8 md:p-12 order-2 lg:order-1">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-secondary mb-3">
-              كيف نحدد سعر الأثاث؟
+              كيف نحدد سعر اثاث؟
             </h2>
 
             <p className="text-lg font-medium text-slate-800 mb-4 mt-8">
@@ -63,7 +63,7 @@ const PriceDetermination = () => {
               <div>
                 <h4 className="font-bold text-slate-800 mb-1">العمر</h4>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  أثاث عمره سنة أو سنتين سعره أفضل من أثاث عمره خمس سنوات أو
+                  اثاث عمره سنة أو سنتين سعره أفضل من اثاث عمره خمس سنوات أو
                   أكثر.
                 </p>
               </div>

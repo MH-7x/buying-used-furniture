@@ -34,7 +34,7 @@ const SellProcessSection = ({
       description: "تواصل سريع ومباشر",
       details: [
         "اتصل أو راسل واتساب",
-        "أرسل صور للأثاث",
+        "أرسل صور للاثاث",
         "نرد عليك خلال دقائق",
       ],
     },
@@ -56,7 +56,7 @@ const SellProcessSection = ({
       description: "سهولة في التعامل",
       details: [
         "نحدد موعد يناسبك",
-        "نفك الأثاث مجاناً",
+        "نفك اثاث مجاناً",
         "دفع فوري (نقد، تحويل، شيك)",
       ],
     },
@@ -88,12 +88,12 @@ const SellProcessSection = ({
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-5 tracking-tight text-secondary">
-            {title ? title : " بيع أثاثك في 4 خطوات بسيطة وسريعة"}
+            {title ? title : " بيع اثاثك في 4 خطوات بسيطة وسريعة"}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             {description
               ? description
-              : "  عملية بسيطة، سريعة، وآمنة. حول أثاثك المستعمل إلى كاش في 4 خطوات فقط."}
+              : "  عملية بسيطة، سريعة، وآمنة. حول اثاثك المستعمل إلى كاش في 4 خطوات فقط."}
           </p>
         </div>
 
@@ -236,7 +236,7 @@ const SellProcessSection = ({
         >
           <div className="relative z-10 flex flex-col items-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-              جاهز تبيع أثاثك؟
+              جاهز تبيع اثاثك؟
             </h3>
             <p className="mb-8 text-white/80 max-w-xl">
               لا تضيع وقتك في المساومات العشوائية. تواصل معنا الآن واحصل على

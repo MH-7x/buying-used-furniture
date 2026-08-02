@@ -30,7 +30,7 @@ const ContactFormEmail = ({ payload }: ContactFormEmailProps) => {
           @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
         `}</style>
       </Head>
-      <Preview>رسالة جديدة من {fullName} — شركة شراء أثاث مستعمل</Preview>
+      <Preview>رسالة جديدة من {fullName} — شركة شراء اثاث مستعمل</Preview>
       <Body style={main}>
         <Container style={container}>
           {/* ── Header Band ── */}
@@ -43,7 +43,7 @@ const ContactFormEmail = ({ payload }: ContactFormEmailProps) => {
             >
               <tr>
                 <td align="center">
-                  <Text style={logoText}>شركة شراء أثاث مستعمل</Text>
+                  <Text style={logoText}>شركة شراء اثاث مستعمل</Text>
                 </td>
               </tr>
             </table>
@@ -169,13 +169,13 @@ const ContactFormEmail = ({ payload }: ContactFormEmailProps) => {
 
           {/* ── Footer ── */}
           <Section style={footer}>
-            <Text style={footerBrand}>شركة شراء أثاث مستعمل</Text>
+            <Text style={footerBrand}>شركة شراء اثاث مستعمل</Text>
             <Text style={footerText}>
               هذه الرسالة تم إنشاؤها تلقائيًا من نموذج الاتصال على موقعك.
             </Text>
             <Hr style={footerDivider} />
             <Text style={footerCopy}>
-              © {new Date().getFullYear()} شركة شراء أثاث مستعمل — جميع الحقوق
+              © {new Date().getFullYear()} شركة شراء اثاث مستعمل — جميع الحقوق
               محفوظة
             </Text>
           </Section>
