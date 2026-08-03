@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
-import { DirectionProvider } from "@/components/ui/direction";
 import Navbar from "@/components/main/Navbar";
 import FooterNew from "@/components/FooterNew";
 import { App } from "@/lib/App";
@@ -62,13 +61,11 @@ export default function RootLayout({
         dir="rtl"
         className={`${rubik.className} antialiased max-w-350 mx-auto bg-primary/10`}
       >
-        <DirectionProvider dir="rtl">
-          <Navbar />
-          {children}
-          <GTM />
-          <FooterNew />
-          <Toaster />
-        </DirectionProvider>
+        <Navbar />
+        {children}
+        <GTM />
+        <FooterNew />
+        <Toaster />
       </body>
     </html>
   );
