@@ -100,7 +100,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/شراء-الالكترونيات-المستعملة.jpg"],
-    lastModified: "2026-08-02",
+    lastModified: "2026-08-03",
   },
 ];
 
