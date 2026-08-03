@@ -221,7 +221,7 @@ export default function PricingRange() {
             </div>
             <Link
               href="https://wa.me/+971509684380?text=I%20Contact%20You%20For%20Used%20Furniture"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               target="_blank"
               className="mt-4 md:mt-0 md:mr-auto "
             >

@@ -181,9 +181,9 @@ const RAKPage = () => {
                   <CheckIcon size={18} />
                 </div>
 
-                <h3 className="text-lg font-medium  relative z-10 text-secondary">
+                <p className="text-lg font-medium  relative z-10 text-secondary">
                   {method}
-                </h3>
+                </p>
               </div>
             ))}
           </div>

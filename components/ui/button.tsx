@@ -60,7 +60,7 @@ function Button({
         href={`https://wa.me/${App.phone}?text=I%20Contact%20You%20For%20Used%20Furniture`}
         target="_blank"
         title="واتساب لنا"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer nofollow"
       >
         <Comp
           data-slot="button"

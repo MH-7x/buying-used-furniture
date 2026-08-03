@@ -71,6 +71,7 @@ const Contact = () => (
                 className="font-medium text-secondary"
                 href="https://wa.me/+971509684380"
                 target="_blank"
+                rel="noopener noreferrer nofollow"
               >
                 +971 509684380
               </Link>

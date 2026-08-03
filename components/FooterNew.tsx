@@ -96,9 +96,9 @@ const FooterNew = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16 text-white/90">
           {/* Column 1: Services */}
           <div className="space-y-6">
-            <h3 className="text-lg font-bold text-white uppercase tracking-wider border-r-4 border-primary/40 pr-3">
+            <p className="text-lg font-bold text-white uppercase tracking-wider border-r-4 border-primary/40 pr-3">
               خدمات
-            </h3>
+            </p>
             <ul className="space-y-2.5">
               {servicesLinks.map((link, index) => (
                 <li key={index} className="w-max ">
@@ -116,9 +116,9 @@ const FooterNew = () => {
 
           {/* Column 2: Locations */}
           <div className="space-y-6">
-            <h3 className="text-lg font-bold text-white uppercase tracking-wider border-r-4 border-primary/40 pr-3">
+            <p className="text-lg font-bold text-white uppercase tracking-wider border-r-4 border-primary/40 pr-3">
               المواقع
-            </h3>
+            </p>
             <ul className="space-y-2.5">
               {LocationLinks.map((loc, index) => (
                 <li key={index} className="w-max ">
@@ -136,29 +136,41 @@ const FooterNew = () => {
 
           {/* Column 3: Quick Links */}
           <div className="space-y-6">
-            <h3 className="text-lg font-bold text-white uppercase tracking-wider border-r-4 border-primary/40 pr-3">
+            <p className="text-lg font-bold text-white uppercase tracking-wider border-r-4 border-primary/40 pr-3">
               روابط سريعة
-            </h3>
+            </p>
             <ul className="space-y-2.5">
-              {quickLinks.map((link, index) => (
-                <li key={index} className="w-max ">
-                  <a
-                    href={link.link}
-                    className="text-sm hover:text-white hover:pr-2 transition-all duration-200 flex items-center gap-2 group"
-                  >
-                    <span className="w-1 h-1 bg-primary rounded-full group-hover:bg-white transition-colors"></span>
-                    {link.title}
-                  </a>
-                </li>
-              ))}
+              {quickLinks.map((link, index) => {
+                const isWa = link.link.startsWith("https://wa.me");
+                const isExternal = link.link.startsWith("http");
+                return (
+                  <li key={index} className="w-max ">
+                    <a
+                      href={link.link}
+                      target={isExternal ? "_blank" : undefined}
+                      rel={
+                        isWa
+                          ? "noopener noreferrer nofollow"
+                          : isExternal
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
+                      className="text-sm hover:text-white hover:pr-2 transition-all duration-200 flex items-center gap-2 group"
+                    >
+                      <span className="w-1 h-1 bg-primary rounded-full group-hover:bg-white transition-colors"></span>
+                      {link.title}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
           {/* Column 4: Visit Store (Map Placeholder) */}
           <div className="space-y-6">
-            <h3 className="text-lg font-bold text-white uppercase tracking-wider border-r-4 border-primary/40 pr-3">
+            <p className="text-lg font-bold text-white uppercase tracking-wider border-r-4 border-primary/40 pr-3">
               قم بزيارة المتجر
-            </h3>
+            </p>
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.1387832604737!2d55.220110399999996!3d25.097163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6ddc3e3ffc31%3A0xad331828860361dd!2z2LTYsdmD2Kkg2LTYsdin2KEg2KfYq9in2Ksg2YXYs9iq2LnZhdmE!5e0!3m2!1sen!2s!4v1772001782016!5m2!1sen!2s"
@@ -196,18 +208,26 @@ const FooterNew = () => {
           {/* Social Icons */}
           <div className="flex items-center gap-4">
             {[Facebook, Instagram, Pin, MessageCircle, Store].map(
-              (Icon, idx) => (
-                <a
-                  key={idx}
-                  href={socialLinks[idx]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Follow Us on Social Media"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 text-gray-200 hover:bg-primary hover:text-secondary hover:-translate-y-1 transition-all duration-300"
-                >
-                  <Icon size={16} />
-                </a>
-              ),
+              (Icon, idx) => {
+                const link = socialLinks[idx];
+                const isWa = link.startsWith("https://wa.me");
+                return (
+                  <a
+                    key={idx}
+                    href={link}
+                    target="_blank"
+                    rel={
+                      isWa
+                        ? "noopener noreferrer nofollow"
+                        : "noopener noreferrer"
+                    }
+                    title="Follow Us on Social Media"
+                    className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 text-gray-200 hover:bg-primary hover:text-secondary hover:-translate-y-1 transition-all duration-300"
+                  >
+                    <Icon size={16} />
+                  </a>
+                );
+              },
             )}
           </div>
         </div>
