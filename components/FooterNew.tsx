@@ -20,11 +20,14 @@ export const quickLinks = [
 
   { title: "مشاركات المدونة", link: "#" },
   { title: "خريطة الموقع", link: "/" },
-  { title: "شريكنا المتحرك", link: "https://abumuhammadmovers.com/" },
+  {
+    title: "شركة نقل اثاث في دبي",
+    link: "https://moversandpackersinuae.com/نقل-اثاث-دبي",
+  },
 
   {
     title: "حول مطور الويب",
-    link: "https://wa.me/+971509684380?text=Hello%20Mashal,%20I%20Need%20Your%20Service%20!",
+    link: "https://wa.me/+923171619916?text=Hello%20Mashal,%20I%20Need%20Your%20Service%20!",
   },
 ];
 
@@ -152,8 +155,8 @@ const FooterNew = () => {
                         isWa
                           ? "noopener noreferrer nofollow"
                           : isExternal
-                          ? "noopener noreferrer"
-                          : undefined
+                            ? "noopener noreferrer"
+                            : undefined
                       }
                       className="text-sm hover:text-white hover:pr-2 transition-all duration-200 flex items-center gap-2 group"
                     >
